@@ -1,0 +1,19 @@
+.card {
+  display: block;
+  padding: $radix-padding;
+  border: $radix-border-thickness solid #ddd;
+  box-shadow: $radix-box-shadow;
+
+  .card-title {
+    font-size: $radix-font-size;
+    padding-bottom: $radix-padding;
+    font-weight: bold;
+  }
+  .card-body {
+    font-size: $radix-font-size;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

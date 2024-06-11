@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "gsap": "npm:@gsap/business@^3.12.5",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "gsap": "npm:@gsap/business@^3.12.5",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.75.0"
+  }
+}
