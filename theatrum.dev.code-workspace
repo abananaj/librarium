@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../theatrum.dev"
+	},
+	{
+		"path": "../fundamentum"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {}
+}
