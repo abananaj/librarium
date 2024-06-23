@@ -2,7 +2,7 @@
 /**
  * Title: Footer w/ search, site title, credit
 
- * Slug: fundamentum/foot-search
+ * Slug: /foot-search
  * Categories: general
  */
 ?>
