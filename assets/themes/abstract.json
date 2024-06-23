@@ -1,4 +1,7 @@
 {
+  "title": "abstract",
+  "slug": "abstract",
+  "description": "",
   "version": 3,
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "settings": {
@@ -21,7 +24,7 @@
     "layout": {
       "allowCustomContentAndWideSize": true,
       "allowEditing": true,
-      "contentSize": "1140px",
+      "contentSize": "1200px",
       "wideSize": "100%"
     },
     "lightbox": {
@@ -32,7 +35,8 @@
       "sticky": true
     },
     "shadow": {
-      "defaultPresets": true
+      "defaultPresets": true,
+      "presets": []
     },
     "spacing": {
       "blockGap": true,
@@ -75,83 +79,29 @@
         {
           "name": "Base",
           "slug": "base-duo",
-          "colors": ["#910F13", "##EBE1C5"]
+          "colors": ["#910F13", "#EBE1C5"]
         },
         {
           "name": "Contrast",
           "slug": "contrast-duo",
-          "colors": ["#032603", "##EBE1C5"]
+          "colors": ["#032603", "#EBE1C5"]
         },
         {
           "name": "Accent",
           "slug": "accent-duo",
-          "colors": ["#BF7513", "##EBE1C5"]
+          "colors": ["#BF7513", "#EBE1C5"]
         }
       ],
       "gradients": [],
       "palette": [
-        { "name": "Base", "slug": "base", "color": "#910F13" },
-        { "name": "Complementary", "slug": "comp", "color": "#19113B" },
-        { "name": "Contrast", "slug": "contrast", "color": "#032603" },
-        { "name": "Accent", "slug": "accent", "color": "#BF7513" },
-        { "name": "Highlight", "slug": "highlight", "color": "#DBAC2A" },
-        { "name": "Background", "slug": "bg", "color": "##F5FCF5" },
-        { "name": "Text", "slug": "txt", "color": "##170001" },
-        { "name": "Background Alt", "slug": "bgalt", "color": "##170001" },
-        { "name": "Text", "slug": "txtalt", "color": "##F5FCF5" },
-        { "name": "Light", "slug": "light", "color": "##EBE1C5" },
-        { "name": "Dark", "slug": "dark", "color": "##42090B" },
-        { "name": "black", "slug": "black", "color": "#000000" },
-        { "name": "log-cabin", "slug": "log-cabin", "color": "#151E16" },
-        { "name": "hunter-green", "slug": "hunter-green", "color": "#0D120E" },
-        { "name": "heavy-metal", "slug": "heavy-metal", "color": "#243328" },
-        { "name": "stratos", "slug": "stratos", "color": "#001156" },
-        { "name": "jaguar", "slug": "jaguar", "color": "#0A0116" },
-        {
-          "name": "antique-brass",
-          "slug": "antique-brass",
-          "color": "#CC8776"
-        },
-        { "name": "bay-leaf", "slug": "bay-leaf", "color": "#84BA91" },
-        { "name": "persimmon", "slug": "persimmon", "color": "#FF704D" },
-        { "name": "dandelion", "slug": "dandelion", "color": "#FFD966" },
-        { "name": "periwinkle", "slug": "periwinkle", "color": "#CCD5FF" },
-        {
-          "name": "colonial-white",
-          "slug": "colonial-white",
-          "color": "#FFEDB8"
-        },
-        { "name": "chambray", "slug": "chambray", "color": "#3D4D99" },
-        {
-          "name": "peach-schnapps",
-          "slug": "peach-schnapps",
-          "color": "#FFE0D9"
-        },
-        {
-          "name": "morocco-brown",
-          "slug": "morocco-brown",
-          "color": "#4A0F00"
-        },
-        { "name": "milano-red", "slug": "milano-red", "color": "#BE2500" },
-        {
-          "name": "black-russian",
-          "slug": "black-russian",
-          "color": "#0E0033"
-        },
-        { "name": "hot-toddy", "slug": "hot-toddy", "color": "#A67E05" },
-        { "name": "saddle-brown", "slug": "saddle-brown", "color": "#544003" },
-        { "name": "sea-green", "slug": "sea-green", "color": "#378C4B" },
-        { "name": "gum-leaf", "slug": "gum-leaf", "color": "#B6D1BC" },
-        { "name": "corn", "slug": "corn", "color": "#F2B807" },
-        { "name": "harp", "slug": "harp", "color": "#E6F2E9" },
-        { "name": "Aubergine", "slug": "aubergine", "color": "##42090B" },
+        { "name": "Aubergine", "slug": "aubergine", "color": "#42090B" },
         {
           "name": "Double Spanish White",
           "slug": "double-spanish-white",
-          "color": "##EBE1C5"
+          "color": "#EBE1C5"
         },
-        { "name": "Diesel", "slug": "diesel", "color": "##170001" },
-        { "name": "Ottoman", "slug": "ottoman", "color": "##F5FCF5" },
+        { "name": "Diesel", "slug": "diesel", "color": "#170001" },
+        { "name": "Ottoman", "slug": "ottoman", "color": "#F5FCF5" },
         {
           "name": "English Holly",
           "slug": "english-holly",
@@ -160,14 +110,26 @@
         { "name": "Meteor", "slug": "meteor", "color": "#BF7513" },
         { "name": "Golden Grass", "slug": "golden-grass", "color": "#DBAC2A" },
         { "name": "Haiti", "slug": "haiti", "color": "#19113B" },
-        { "name": "Tamarillo", "slug": "tamarillo", "color": "#910F13" }
+        { "name": "Tamarillo", "slug": "tamarillo", "color": "#910F13" },
+
+        { "name": "Base", "slug": "base", "color": "#910F13" },
+        { "name": "Complementary", "slug": "comp", "color": "#19113B" },
+        { "name": "Contrast", "slug": "contrast", "color": "#032603" },
+        { "name": "Accent", "slug": "accent", "color": "#BF7513" },
+        { "name": "Highlight", "slug": "highlight", "color": "#DBAC2A" },
+        { "name": "Background", "slug": "bg", "color": "#F5FCF5" },
+        { "name": "Text", "slug": "txt", "color": "#170001" },
+        { "name": "Background Alt", "slug": "bgalt", "color": "#170001" },
+        { "name": "Text", "slug": "txtalt", "color": "#F5FCF5" },
+        { "name": "Light", "slug": "light", "color": "#EBE1C5" },
+        { "name": "Dark", "slug": "dark", "color": "#42090B" }
       ]
     },
     "custom": {
       "border": {
         "style": "solid",
         "width": "2px",
-        "color": "##42090B",
+        "color": "#42090B",
         "radius": "solid"
       },
       "btn": {
@@ -235,59 +197,24 @@
       "writingMode": true,
       "fontFamilies": [
         {
-          "name": "mendlserifvariable",
-          "slug": "mendl-serif-variable",
-          "fontFamily": "'mendl-serif-variable',sans-serif;"
-        },
-        {
-          "name": "mendlsansvariable",
+          "name": "mendl sans variable",
           "slug": "mendl-sans-variable",
-          "fontFamily": "'mendl-sans-variable',sans-serif;"
+          "fontFamily": "'mendl-sans-variable'"
         },
         {
-          "name": "rocgroteskvariable",
+          "name": "mendl serif variable",
+          "slug": "mendl-serif-variable",
+          "fontFamily": "'mendl-serif-variable'"
+        },
+        {
+          "name": "roc grotesk variable",
           "slug": "roc-grotesk-variable",
-          "fontFamily": "'roc-grotesk-variable',sans-serif;"
+          "fontFamily": "'roc-grotesk-variable'"
         },
         {
-          "name": "hwtmardell",
-          "slug": "hwt-mardell",
-          "fontFamily": "'hwt-mardell',sans-serif;"
-        },
-        {
-          "name": "Headings",
-          "slug": "headings",
-          "fontFamily": "'mendl-serif-variable',sans-serif;"
-        },
-        {
-          "name": "Headings Alt",
-          "slug": "headingsalt",
-          "fontFamily": "'mendl-sans-variable', sans-serif; "
-        },
-        {
-          "name": "Body",
-          "slug": "body",
-          "fontFamily": "'roc-grotesk-variable', sans-serif;"
-        },
-        {
-          "name": "Display",
-          "slug": "display",
-          "fontFamily": "'roc-grotesk-variable', sans-serif;"
-        },
-        {
-          "name": "Button",
-          "slug": "btn",
-          "fontFamily": "'roc-grotesk-variable', sans-serif;"
-        },
-        {
-          "name": "Nav",
-          "slug": "nav",
-          "fontFamily": "'roc-grotesk-variable', sans-serif;"
-        },
-        {
-          "name": "Caption",
-          "slug": "caption",
-          "fontFamily": "'roc-grotesk-variable', sans-serif;"
+          "name": "lincoln electric",
+          "slug": "lincoln-electric",
+          "fontFamily": "'lincoln-electric'"
         }
       ],
       "fontSizes": [
@@ -296,76 +223,24 @@
           "size": "4.26rem",
           "name": "Heading 1"
         },
-        {
-          "slug": "h2",
-          "size": "2.62rem",
-          "name": "Heading 2"
-        },
-        {
-          "slug": "h3",
-          "size": "1.618rem",
-          "name": "Heading 3"
-        },
-        {
-          "slug": "h4",
-          "size": "1.33rem",
-          "name": "Heading 4"
-        },
-        {
-          "slug": "h5",
-          "size": "1.25rem",
-          "name": "Heading 5"
-        },
-        {
-          "slug": "h6",
-          "size": "1.125rem",
-          "name": "Heading 6"
-        },
-        {
-          "slug": "xs",
-          "size": ".56rem",
-          "name": "Extra Small"
-        },
-        {
-          "slug": "small",
-          "size": ".833rem",
-          "name": "Small"
-        },
-        {
-          "slug": "base",
-          "size": "calc(15px + 0.390625vw)",
-          "name": "Base"
-        },
-        {
-          "slug": "body",
-          "size": "calc(15px + 0.390625vw)",
-          "name": "Body"
-        },
+        { "slug": "h2", "size": "2.62rem", "name": "Heading 2" },
+        { "slug": "h3", "size": "1.618rem", "name": "Heading 3" },
+        { "slug": "h4", "size": "1.33rem", "name": "Heading 4" },
+        { "slug": "h5", "size": "1.25rem", "name": "Heading 5" },
+        { "slug": "h6", "size": "1.125rem", "name": "Heading 6" },
+        { "slug": "xs", "size": ".56rem", "name": "Extra Small" },
+        { "slug": "small", "size": ".833rem", "name": "Small" },
+        { "slug": "base", "size": "calc(15px + 0.390625vw)", "name": "Base" },
+        { "slug": "body", "size": "calc(15px + 0.390625vw)", "name": "Body" },
         {
           "slug": "medium",
           "size": "calc(15px + 0.390625vw)",
           "name": "Medium"
         },
-        {
-          "slug": "large",
-          "size": "1.33rem",
-          "name": "Large"
-        },
-        {
-          "slug": "x-large",
-          "size": "1.618rem",
-          "name": "XL"
-        },
-        {
-          "slug": "xx-large",
-          "size": "2.62rem",
-          "name": "XXL"
-        },
-        {
-          "slug": "xxx-large",
-          "size": "4.26rem",
-          "name": "XXXL"
-        }
+        { "slug": "large", "size": "1.33rem", "name": "Large" },
+        { "slug": "x-large", "size": "1.618rem", "name": "XL" },
+        { "slug": "xx-large", "size": "2.62rem", "name": "XXL" },
+        { "slug": "xxx-large", "size": "4.26rem", "name": "XXXL" }
       ]
     }
   },
@@ -590,5 +465,19 @@
       "postTypes": ["canvas", "post"]
     }
   ],
-  "patterns": ["header", "footer"]
+  "blockTypes": [],
+  "templateParts": [],
+  "patterns": [
+    "footer",
+    "header",
+    "query-grid",
+    "page-cover",
+    "carousel",
+    "two-columns-with-two-nested-columns",
+    "mixed-cols-mobile-and-desktop",
+    "three-unequal-columns",
+    "three-equal-columns-alt",
+    "three-equal-columns",
+    "mixed-cols-mobile-tablet-and-desktop"
+  ]
 }
