@@ -1,4 +1,7 @@
 {
+  "title": "yim",
+  "slug": "yim",
+  "description": "",
   "version": 3,
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "settings": {
@@ -21,7 +24,7 @@
     "layout": {
       "allowCustomContentAndWideSize": true,
       "allowEditing": true,
-      "contentSize": "1140px",
+      "contentSize": "1200px",
       "wideSize": "100%"
     },
     "lightbox": {
@@ -32,7 +35,8 @@
       "sticky": true
     },
     "shadow": {
-      "defaultPresets": true
+      "defaultPresets": true,
+      "presets": []
     },
     "spacing": {
       "blockGap": true,
@@ -100,34 +104,7 @@
         { "name": "Background Alt", "slug": "bgalt", "color": "#1E2B32" },
         { "name": "Text", "slug": "txtalt", "color": "#E1EFF2" },
         { "name": "Light", "slug": "light", "color": "#E1EFF2" },
-        { "name": "Dark", "slug": "dark", "color": "#1E2B32" },
-        { "name": "Olive Drab", "slug": "olive-drab", "color": "#60942C" },
-        { "name": "Sunshade", "slug": "sunshade", "color": "#FFA724" },
-        {
-          "name": "Roof Terracotta",
-          "slug": "roof-terracotta",
-          "color": "#B0221F"
-        },
-        { "name": "Gothic", "slug": "gothic", "color": "#6C9EAA" },
-        {
-          "name": "Catskill White",
-          "slug": "catskill-white",
-          "color": "#E1EFF2"
-        },
-        {
-          "name": "Quarter Spanish White",
-          "slug": "quarter-spanish-white",
-          "color": "#F9F8E8"
-        },
-        { "name": "Swamp", "slug": "swamp", "color": "#001621" },
-        {
-          "name": "Mineral Green",
-          "slug": "mineral-green",
-          "color": "#3A5E5E"
-        },
-        { "name": "Ebony Clay", "slug": "ebony-clay", "color": "#1E2B32" },
-        { "name": "Mustard", "slug": "mustard", "color": "#FFD659" },
-        { "name": "Clover", "slug": "clover", "color": "#3C5C1C" }
+        { "name": "Dark", "slug": "dark", "color": "#1E2B32" }
       ]
     },
     "custom": {
@@ -201,115 +178,17 @@
       "textTransform": true,
       "writingMode": true,
       "fontFamilies": [
+        { "name": "Tarif", "slug": "tarif", "fontFamily": "'tarif'" },
+        { "name": "europa", "slug": "europa", "fontFamily": "'europa'" },
         {
-          "name": "europa",
-          "slug": "europa",
-          "fontFamily": "'europa',sans-serif;"
-        },
-        {
-          "name": "mreavesxlmodern",
-          "slug": "mr-eaves-xl-modern",
-          "fontFamily": "'mr-eaves-xl-modern',sans-serif;"
-        },
-        {
-          "name": "mreavesxlmodernnarrow",
-          "slug": "mr-eaves-xl-modern-narrow",
-          "fontFamily": "'mr-eaves-xl-modern-narrow',sans-serif;"
-        },
-        {
-          "name": "mreavesxlsans",
-          "slug": "mr-eaves-xl-sans",
-          "fontFamily": "'mr-eaves-xl-sans',sans-serif;"
-        },
-        {
-          "name": "mreavesxlsansnarrow",
-          "slug": "mr-eaves-xl-sans-narrow",
-          "fontFamily": "'mr-eaves-xl-sans-narrow',sans-serif;"
-        },
-        {
-          "name": "mrseavesxlserif",
-          "slug": "mrs-eaves-xl-serif",
-          "fontFamily": "'mrs-eaves-xl-serif',sans-serif;"
-        },
-        {
-          "name": "mrseavesxlserifnarrow",
-          "slug": "mrs-eaves-xl-serif-narrow",
-          "fontFamily": "'mrs-eaves-xl-serif-narrow',sans-serif;"
-        },
-        {
-          "name": "novecentosanscondensed",
-          "slug": "novecento-sans-condensed",
-          "fontFamily": "'novecento-sans-condensed',sans-serif;"
-        },
-        {
-          "name": "novecentosansnarrow",
+          "name": "novecento sans narrow",
           "slug": "novecento-sans-narrow",
-          "fontFamily": "'novecento-sans-narrow',sans-serif;"
+          "fontFamily": "'novecento-sans-narrow'"
         },
         {
-          "name": "novecentosanswide",
+          "name": "novecento sans wide",
           "slug": "novecento-sans-wide",
-          "fontFamily": "'novecento-sans-wide',sans-serif;"
-        },
-        {
-          "name": "novecentoslab",
-          "slug": "novecento-slab",
-          "fontFamily": "'novecento-slab',sans-serif;"
-        },
-        {
-          "name": "novecentoslabcondensed",
-          "slug": "novecento-slab-condensed",
-          "fontFamily": "'novecento-slab-condensed',sans-serif;"
-        },
-        {
-          "name": "novecentoslabnarrow",
-          "slug": "novecento-slab-narrow",
-          "fontFamily": "'novecento-slab-narrow',sans-serif;"
-        },
-        {
-          "name": "novecentoslabwide",
-          "slug": "novecento-slab-wide",
-          "fontFamily": "'novecento-slab-wide',sans-serif;"
-        },
-        {
-          "name": "novecentosans",
-          "slug": "novecento-sans",
-          "fontFamily": "'novecento-sans',sans-serif;"
-        },
-        {
-          "name": "Headings",
-          "slug": "headings",
-          "fontFamily": "'novecento-slab',sans-serif;"
-        },
-        {
-          "name": "Headings Alt",
-          "slug": "headingsalt",
-          "fontFamily": "'novecento-sans', sans-serif; "
-        },
-        {
-          "name": "Body",
-          "slug": "body",
-          "fontFamily": "'europa', sans-serif;"
-        },
-        {
-          "name": "Display",
-          "slug": "display",
-          "fontFamily": "'europa', sans-serif;"
-        },
-        {
-          "name": "Button",
-          "slug": "btn",
-          "fontFamily": "'novecento-sans-condensed', sans-serif;"
-        },
-        {
-          "name": "Nav",
-          "slug": "nav",
-          "fontFamily": "'novecento-sans-condensed', sans-serif;"
-        },
-        {
-          "name": "Caption",
-          "slug": "caption",
-          "fontFamily": "'europa', sans-serif;"
+          "fontFamily": "'novecento-sans-wide'"
         }
       ],
       "fontSizes": [
@@ -318,76 +197,24 @@
           "size": "4.26rem",
           "name": "Heading 1"
         },
-        {
-          "slug": "h2",
-          "size": "2.62rem",
-          "name": "Heading 2"
-        },
-        {
-          "slug": "h3",
-          "size": "1.618rem",
-          "name": "Heading 3"
-        },
-        {
-          "slug": "h4",
-          "size": "1.33rem",
-          "name": "Heading 4"
-        },
-        {
-          "slug": "h5",
-          "size": "1.25rem",
-          "name": "Heading 5"
-        },
-        {
-          "slug": "h6",
-          "size": "1.125rem",
-          "name": "Heading 6"
-        },
-        {
-          "slug": "xs",
-          "size": ".56rem",
-          "name": "Extra Small"
-        },
-        {
-          "slug": "small",
-          "size": ".833rem",
-          "name": "Small"
-        },
-        {
-          "slug": "base",
-          "size": "calc(15px + 0.390625vw)",
-          "name": "Base"
-        },
-        {
-          "slug": "body",
-          "size": "calc(15px + 0.390625vw)",
-          "name": "Body"
-        },
+        { "slug": "h2", "size": "2.62rem", "name": "Heading 2" },
+        { "slug": "h3", "size": "1.618rem", "name": "Heading 3" },
+        { "slug": "h4", "size": "1.33rem", "name": "Heading 4" },
+        { "slug": "h5", "size": "1.25rem", "name": "Heading 5" },
+        { "slug": "h6", "size": "1.125rem", "name": "Heading 6" },
+        { "slug": "xs", "size": ".56rem", "name": "Extra Small" },
+        { "slug": "small", "size": ".833rem", "name": "Small" },
+        { "slug": "base", "size": "calc(15px + 0.390625vw)", "name": "Base" },
+        { "slug": "body", "size": "calc(15px + 0.390625vw)", "name": "Body" },
         {
           "slug": "medium",
           "size": "calc(15px + 0.390625vw)",
           "name": "Medium"
         },
-        {
-          "slug": "large",
-          "size": "1.33rem",
-          "name": "Large"
-        },
-        {
-          "slug": "x-large",
-          "size": "1.618rem",
-          "name": "XL"
-        },
-        {
-          "slug": "xx-large",
-          "size": "2.62rem",
-          "name": "XXL"
-        },
-        {
-          "slug": "xxx-large",
-          "size": "4.26rem",
-          "name": "XXXL"
-        }
+        { "slug": "large", "size": "1.33rem", "name": "Large" },
+        { "slug": "x-large", "size": "1.618rem", "name": "XL" },
+        { "slug": "xx-large", "size": "2.62rem", "name": "XXL" },
+        { "slug": "xxx-large", "size": "4.26rem", "name": "XXXL" }
       ]
     }
   },
@@ -590,14 +417,24 @@
     },
     "css": ""
   },
-  "patterns": ["header", "footer"],
+  "customTemplates": [],
+  "blockTypes": [],
   "templateParts": [
-    {
-      "title": "Video Upload Form",
-      "name": "video-upload-form",
-      "area": "general"
-    },
+    { "title": "upload form", "name": "upload-form", "area": "general" },
     { "title": "CTA", "name": "cta", "area": "general" },
-    { "title": "Navbar", "name": "navbar", "area": "general" }
+    { "title": "Navbar", "name": "navbar", "area": "header" }
+  ],
+  "patterns": [
+    "footer",
+    "header",
+    "query-grid",
+    "page-cover",
+    "carousel",
+    "two-columns-with-two-nested-columns",
+    "mixed-cols-mobile-and-desktop",
+    "three-unequal-columns",
+    "three-equal-columns-alt",
+    "three-equal-columns",
+    "mixed-cols-mobile-tablet-and-desktop"
   ]
 }
