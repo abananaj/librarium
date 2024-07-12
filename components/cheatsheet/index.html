@@ -2,16 +2,261 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-  <script src="js/color-modes.js"></script>
+  <script src="../assets/js/color-modes.js"></script>
   <title>Cheatsheet</title>
 
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/cheatsheet.css">
+  <link rel="stylesheet" href="../../css/index.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    /**
+   * Bootstrap "Journal code" icon
+   * @link https://icons.getbootstrap.com/icons/journal-code/
+   */
+    .bd-heading a::before {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: .25rem;
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999' viewBox='0 0 16 16'%3E%3Cpath d='M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1H2a2 2 0 0 1 2-2z'/%3E%3Cpath d='M2 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2z'/%3E%3Cpath fill-rule='evenodd' d='M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z'/%3E%3C/svg%3E");
+      background-size: 1em;
+    }
+
+    /* stylelint-disable-next-line selector-max-universal */
+    .bd-heading+div>*+* {
+      margin-top: 3rem;
+    }
+
+    /* Table of contents */
+    .bd-aside a {
+      padding: .1875rem .5rem;
+      margin-top: .125rem;
+      margin-left: .3125rem;
+      color: var(--bs-body-color);
+    }
+
+    .bd-aside a:hover,
+    .bd-aside a:focus {
+      color: var(--bs-body-color);
+      background-color: rgba(121, 82, 179, .1);
+    }
+
+    .bd-aside .active {
+      font-weight: 600;
+      color: var(--bs-body-color);
+    }
+
+    .bd-aside .btn {
+      padding: .25rem .5rem;
+      font-weight: 600;
+      color: var(--bs-body-color);
+    }
+
+    .bd-aside .btn:hover,
+    .bd-aside .btn:focus {
+      color: var(--bs-body-color);
+      background-color: rgba(121, 82, 179, .1);
+    }
+
+    .bd-aside .btn:focus {
+      box-shadow: 0 0 0 1px rgba(121, 82, 179, .7);
+    }
+
+    .bd-aside .btn::before {
+      width: 1.25em;
+      line-height: 0;
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      transition: transform .35s ease;
+
+      /* rtl:raw:
+    transform: rotate(180deg) translateX(-2px);
+    */
+      transform-origin: .5em 50%;
+    }
+
+    .bd-aside .btn[aria-expanded="true"]::before {
+      transform: rotate(90deg)
+        /* rtl:ignore */
+      ;
+    }
+
+
+    /* Examples */
+    .scrollspy-example {
+      height: 200px;
+    }
+
+    [id="modal"] .bd-example .btn,
+    [id="buttons"] .bd-example .btn,
+    [id="tooltips"] .bd-example .btn,
+    [id="popovers"] .bd-example .btn,
+    [id="dropdowns"] .bd-example .btn-group,
+    [id="dropdowns"] .bd-example .dropdown,
+    [id="dropdowns"] .bd-example .dropup,
+    [id="dropdowns"] .bd-example .dropend,
+    [id="dropdowns"] .bd-example .dropstart {
+      margin: 0 1rem 1rem 0;
+    }
+
+    /* Layout */
+    @media (min-width: 1200px) {
+      body {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 4fr 1fr;
+        gap: 1rem;
+      }
+
+      .bd-header {
+        position: fixed;
+        top: 0;
+        /* rtl:begin:ignore */
+        right: 0;
+        left: 0;
+        /* rtl:end:ignore */
+        z-index: 1030;
+        grid-column: 1 / span 3;
+      }
+
+      .bd-aside,
+      .bd-cheatsheet {
+        padding-top: 4rem;
+      }
+
+      /**
+     * 1. Too bad only Firefox supports subgrids ATM
+     */
+      .bd-cheatsheet,
+      .bd-cheatsheet section,
+      .bd-cheatsheet article {
+        display: inherit;
+        /* 1 */
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 4fr;
+        grid-column: 1 / span 2;
+        gap: inherit;
+        /* 1 */
+      }
+
+      .bd-aside {
+        grid-area: 1 / 3;
+        scroll-margin-top: 4rem;
+      }
+
+      .bd-cheatsheet section,
+      .bd-cheatsheet section>h2 {
+        top: 2rem;
+        scroll-margin-top: 2rem;
+      }
+
+      .bd-cheatsheet section>h2::before {
+        position: absolute;
+        /* rtl:begin:ignore */
+        top: 0;
+        right: 0;
+        bottom: -2rem;
+        left: 0;
+        /* rtl:end:ignore */
+        z-index: -1;
+        content: "";
+      }
+
+      .bd-cheatsheet article,
+      .bd-cheatsheet .bd-heading {
+        top: 8rem;
+        scroll-margin-top: 8rem;
+      }
+
+      .bd-cheatsheet .bd-heading {
+        z-index: 1;
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-body-tertiary">
-<div id="bs-color-mode-toggle">  
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -79,7 +324,6 @@
       </li>
     </ul>
   </div>
-</div>
 
 
   <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
@@ -101,75 +345,75 @@
                 aria-controls="partials-collapse">Partials</button>
             <ul class="list-unstyled ps-3 collapse" id="partials-collapse">
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/album">album</a></li>
+                        href="./album.html">album</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/badges">badges</a></li>
+                        href="./badges.html">badges</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/blog">blog</a></li>
+                        href="./blog.html">blog</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/breadcrumbs">breadcrumbs</a></li>
+                        href="./breadcrumbs.html">breadcrumbs</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/buttons">buttons</a></li>
+                        href="./buttons.html">buttons</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/carousel">carousel</a></li>
+                        href="./carousel.html">carousel</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/cheatsheet">cheatsheet</a></li>
+                        href="./cheatsheet.html">cheatsheet</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/checkout-form">checkout-form</a></li>
+                        href="./checkout-form.html">checkout-form</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/cover">cover</a></li>
+                        href="./cover.html">cover</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/custom-jumbotron">jumbotron</a></li>
+                        href="./custom-jumbotron.html">jumbotron</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/dashboard">dashboard</a></li>
+                        href="./dashboard.html">dashboard</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/dropdowns">dropdowns</a></li>
+                        href="./dropdowns.html">dropdowns</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/features">features</a></li>
+                        href="./features.html">features</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/fixed-navbar">fixed-navbar</a></li>
+                        href="./fixed-navbar.html">fixed-navbar</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/footers">footers</a></li>
+                        href="./footers.html">footers</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/grid-template">grid template</a></li>
+                        href="./grid-template.html">grid template</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/headers">headers</a></li>
+                        href="./headers.html">headers</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/heros">heros</a></li>
+                        href="./heros.html">heros</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/index">index</a></li>
+                        href="./index.html">index</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/jumbotrons">jumbotrons</a></li>
+                        href="./jumbotrons.html">jumbotrons</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/listgroups">listgroups</a></li>
+                        href="./listgroups.html">listgroups</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/masonry">masonry</a></li>
+                        href="./masonry.html">masonry</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/modals">modals</a></li>
+                        href="./modals.html">modals</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/navbar-bottom">bottom</a></li>
+                        href="./navbar-bottom.html">bottom</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/navbars">navbars</a></li>
+                        href="./navbars.html">navbars</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/navs">navs</a></li>
+                        href="./navs.html">navs</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/offcanvas-navbar">offcanvas navbar</a></li>
+                        href="./offcanvas-navbar.html">offcanvas navbar</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/priving">pricing</a></li>
+                        href="./priving.html">pricing</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/product-example">example</a></li>
+                        href="./product-example.html">example</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/sidebars">sidebars</a></li>
+                        href="./sidebars.html">sidebars</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/signin">signin</a></li>
+                        href="./signin.html">signin</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/sticky-footer-fixed-navbar">footer fixed navbar</a></li>
+                        href="./sticky-footer-fixed-navbar.html">footer fixed navbar</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/sticky-footer">sticky footer</a></li>
+                        href="./sticky-footer.html">sticky footer</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/top-navbar">top navbar</a></li>
+                        href="./top-navbar.html">top navbar</a></li>
                 <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                        href="./bootstrap/topbar">topbar</a></li>
+                        href="./topbar.html">topbar</a></li>
             </ul>
         </li>
         <li class="my-2">
@@ -251,7 +495,7 @@
       <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
 
       <article class="my-3" id="typography">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Typography</h3>
           <a class="d-flex align-items-center" href="../content/typography/">Documentation</a>
         </div>
@@ -379,7 +623,7 @@
         </div>
       </article>
       <article class="my-3" id="images">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Images</h3>
           <a class="d-flex align-items-center" href="../content/images/">Documentation</a>
         </div>
@@ -419,7 +663,7 @@
         </div>
       </article>
       <article class="my-3" id="tables">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Tables</h3>
           <a class="d-flex align-items-center" href="../content/tables/">Documentation</a>
         </div>
@@ -603,7 +847,7 @@
         </div>
       </article>
       <article class="my-3" id="figures">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Figures</h3>
           <a class="d-flex align-items-center" href="../content/figures/">Documentation</a>
         </div>
@@ -634,7 +878,7 @@
       <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Forms</h2>
 
       <article class="my-3" id="overview">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Overview</h3>
           <a class="d-flex align-items-center" href="../forms/overview/">Documentation</a>
         </div>
@@ -698,7 +942,7 @@
         </div>
       </article>
       <article class="my-3" id="disabled-forms">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Disabled forms</h3>
           <a class="d-flex align-items-center" href="../forms/overview/#disabled-forms">Documentation</a>
         </div>
@@ -762,7 +1006,7 @@
         </div>
       </article>
       <article class="my-3" id="sizing">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Sizing</h3>
           <a class="d-flex align-items-center" href="../forms/form-control/#sizing">Documentation</a>
         </div>
@@ -816,7 +1060,7 @@
         </div>
       </article>
       <article class="my-3" id="input-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Input group</h3>
           <a class="d-flex align-items-center" href="../forms/input-group/">Documentation</a>
         </div>
@@ -856,7 +1100,7 @@
         </div>
       </article>
       <article class="my-3" id="floating-labels">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Floating labels</h3>
           <a class="d-flex align-items-center" href="../forms/floating-labels/">Documentation</a>
         </div>
@@ -882,7 +1126,7 @@
         </div>
       </article>
       <article class="my-3" id="validation">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Validation</h3>
           <a class="d-flex align-items-center" href="../forms/validation/">Documentation</a>
         </div>
@@ -968,7 +1212,7 @@
       <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Components</h2>
 
       <article class="my-3" id="accordion">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Accordion</h3>
           <a class="d-flex align-items-center" href="../components/accordion/">Documentation</a>
         </div>
@@ -1040,7 +1284,7 @@
         </div>
       </article>
       <article class="my-3" id="alerts">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Alerts</h3>
           <a class="d-flex align-items-center" href="../components/alerts/">Documentation</a>
         </div>
@@ -1112,7 +1356,7 @@
         </div>
       </article>
       <article class="my-3" id="badge">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Badge</h3>
           <a class="d-flex align-items-center" href="../components/badge/">Documentation</a>
         </div>
@@ -1153,7 +1397,7 @@
         </div>
       </article>
       <article class="my-3" id="breadcrumb">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Breadcrumb</h3>
           <a class="d-flex align-items-center" href="../components/breadcrumb/">Documentation</a>
         </div>
@@ -1176,7 +1420,7 @@
         </div>
       </article>
       <article class="my-3" id="buttons">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Buttons</h3>
           <a class="d-flex align-items-center" href="../components/buttons/">Documentation</a>
         </div>
@@ -1231,7 +1475,7 @@
         </div>
       </article>
       <article class="my-3" id="button-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Button group</h3>
           <a class="d-flex align-items-center" href="../components/button-group/">Documentation</a>
         </div>
@@ -1263,7 +1507,7 @@
         </div>
       </article>
       <article class="my-3" id="card">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Card</h3>
           <a class="d-flex align-items-center" href="../components/card/">Documentation</a>
         </div>
@@ -1355,7 +1599,7 @@
         </div>
       </article>
       <article class="my-3" id="carousel">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Carousel</h3>
           <a class="d-flex align-items-center" href="../components/carousel/">Documentation</a>
         </div>
@@ -1432,7 +1676,7 @@
         </div>
       </article>
       <article class="my-3" id="dropdowns">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Dropdowns</h3>
           <a class="d-flex align-items-center" href="../components/dropdowns/">Documentation</a>
         </div>
@@ -1675,7 +1919,7 @@
         </div>
       </article>
       <article class="my-3" id="list-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>List group</h3>
           <a class="d-flex align-items-center" href="../components/list-group/">Documentation</a>
         </div>
@@ -1741,7 +1985,7 @@
         </div>
       </article>
       <article class="my-3" id="modal">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Modal</h3>
           <a class="d-flex align-items-center" href="../components/modal/">Documentation</a>
         </div>
@@ -1775,7 +2019,7 @@
         </div>
       </article>
       <article class="my-3" id="navs">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Navs</h3>
           <a class="d-flex align-items-center" href="../components/navs-tabs/">Documentation</a>
         </div>
@@ -1860,7 +2104,7 @@
         </div>
       </article>
       <article class="my-3" id="navbar">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Navbar</h3>
           <a class="d-flex align-items-center" href="../components/navbar/">Documentation</a>
         </div>
@@ -1966,7 +2210,7 @@
         </div>
       </article>
       <article class="my-3" id="pagination">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Pagination</h3>
           <a class="d-flex align-items-center" href="../components/pagination/">Documentation</a>
         </div>
@@ -2039,7 +2283,7 @@
         </div>
       </article>
       <article class="my-3" id="popovers">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Popovers</h3>
           <a class="d-flex align-items-center" href="../components/popovers/">Documentation</a>
         </div>
@@ -2082,7 +2326,7 @@
         </div>
       </article>
       <article class="my-3" id="progress">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Progress</h3>
           <a class="d-flex align-items-center" href="../components/progress/">Documentation</a>
         </div>
@@ -2136,7 +2380,7 @@
         </div>
       </article>
       <article class="my-3" id="scrollspy">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Scrollspy</h3>
           <a class="d-flex align-items-center" href="../components/scrollspy/">Documentation</a>
         </div>
@@ -2193,7 +2437,7 @@
         </div>
       </article>
       <article class="my-3" id="spinners">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Spinners</h3>
           <a class="d-flex align-items-center" href="../components/spinners/">Documentation</a>
         </div>
@@ -2267,7 +2511,7 @@
         </div>
       </article>
       <article class="my-3" id="toasts">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Toasts</h3>
           <a class="d-flex align-items-center" href="../components/toasts/">Documentation</a>
         </div>
@@ -2297,7 +2541,7 @@
         </div>
       </article>
       <article class="mt-3 mb-5 pb-5" id="tooltips">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-5">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Tooltips</h3>
           <a class="d-flex align-items-center" href="../components/tooltips/">Documentation</a>
         </div>
@@ -2400,12 +2644,82 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  /* global bootstrap: false */
 
-  <!-- BODY END -->
-   
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/cheatsheet.js"></script>
+    (() => {
+      'use strict'
 
+      // Tooltip and popover demos
+      document.querySelectorAll('.tooltip-demo')
+        .forEach(tooltip => {
+          new bootstrap.Tooltip(tooltip, {
+            selector: '[data-bs-toggle="tooltip"]'
+          })
+        })
+
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+        .forEach(popover => {
+          new bootstrap.Popover(popover)
+        })
+
+      document.querySelectorAll('.toast')
+        .forEach(toastNode => {
+          const toast = new bootstrap.Toast(toastNode, {
+            autohide: false
+          })
+
+          toast.show()
+        })
+
+      // Disable empty links and submit buttons
+      document.querySelectorAll('[href="#"], [type="submit"]')
+        .forEach(link => {
+          link.addEventListener('click', event => {
+            event.preventDefault()
+          })
+        })
+
+      function setActiveItem() {
+        const { hash } = window.location
+
+        if (hash === '') {
+          return
+        }
+
+        const link = document.querySelector(`.bd-aside a[href="${hash}"]`)
+
+        if (!link) {
+          return
+        }
+
+        const active = document.querySelector('.bd-aside .active')
+        const parent = link.parentNode.parentNode.previousElementSibling
+
+        link.classList.add('active')
+
+        if (parent.classList.contains('collapsed')) {
+          parent.click()
+        }
+
+        if (!active) {
+          return
+        }
+
+        const expanded = active.parentNode.parentNode.previousElementSibling
+
+        active.classList.remove('active')
+
+        if (expanded && parent !== expanded) {
+          expanded.click()
+        }
+      }
+
+      setActiveItem()
+      window.addEventListener('hashchange', setActiveItem)
+    })()
+  </script>
 </body>
 
 </html>
