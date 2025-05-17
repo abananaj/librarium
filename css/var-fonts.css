@@ -1,0 +1,469 @@
+@import url('https://use.typekit.net/bmw4zvq.css');
+
+.ad-gothic {
+	font-family: 'ad-gothic-variable', sans-serif;
+	font-variation-settings: 'wdth' 100;
+	font-variation-settings: 'wdth' 900;
+}
+.adapt {
+	font-family: 'adapt-variable', sans-serif;
+	font-variation-settings: 'wdth' 40, 'wght' 100;
+	font-variation-settings: 'wdth' 100, 'wght' 900;
+}
+.allotrope {
+	font-family: 'allotrope-variable', sans-serif;
+	font-variation-settings: 'wdth' 55, 'wght' 100;
+	font-variation-settings: 'wdth' 125, 'wght' 900;
+}
+.antipol {
+	font-family: 'antipol-variable', sans-serif;
+	font-variation-settings: 'wdth' 100, 'wght' 1, 'STCH' 1;
+	font-variation-settings: 'wdth' 250, 'wght' 700, 'STCH' 100;
+}
+.antonia {
+	font-family: 'antonia-variable', sans-serif;
+	font-variation-settings:  'wght' 300, 'opsz' 8;
+	font-variation-settings:  'wght' 900, 'opsz' 48;
+}
+.arnika {
+	font-family: 'arnika-variable', sans-serif;
+	font-variation-settings: 'wdth' 55;
+	font-variation-settings: 'wdth' 100;
+}
+.arsenica {
+	font-family: 'arsenica-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'opsz' 100;
+	font-variation-settings: 'wght' 800, 'opsz' 1000;
+}
+.aviano-copper {
+	font-family: 'aviano-copper-variable', sans-serif;
+	font-variation-settings: 'wght' 1;
+	font-variation-settings: 'wght' 1000;
+}
+.avory-pe {
+	font-family: 'avory-pe-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.bakemono {
+	font-family: 'bakemono-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'MONO' 0;
+	font-variation-settings: 'wght' 800, 'MONO' 1000;
+}
+.basenji {
+	font-family: 'basenji-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 15;
+}
+.bd-caramel {
+	font-family: 'bd-caramel-variable', sans-serif;
+	font-variation-settings: 'bubl' 100;
+	font-variation-settings: 'bubl' 500;
+}
+.bd-console {
+	font-family: 'bd-console-variable', sans-serif;
+	font-variation-settings: 'GAME' 100;
+	font-variation-settings: 'GAME' 500;
+}
+.bitcrusher {
+	font-family: 'bitcrusher-variable', sans-serif;
+	font-variation-settings: 'ital' 0, 'wght' 100, 'wdth' 50;
+	font-variation-settings: 'ital' 12, 'wght' 850, 'wdth' 100;
+}
+.bodoni-pt {
+	font-family: 'bodoni-pt-variable', sans-serif;
+	font-variation-settings: 'opsz' 10, 'wght' 400;
+	font-variation-settings: 'opsz' 60, 'wght' 800;
+}
+.borax {
+	font-family: 'borax-variable', sans-serif;
+	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 1000;
+}
+.cc-dynamic-duo-open {
+	font-family: 'cc-dynamic-duo-open-variable', sans-serif;
+	font-variation-settings: 'wght' 900, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 0;
+}
+.cc-regeneration {
+	font-family: 'cc-regeneration-variable', sans-serif;
+	font-variation-settings: 'wght' 200, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 14;
+}
+.cc-regenerationlevels-var {
+	font-family: 'cc-regenerationlevels-var', sans-serif;
+	font-variation-settings: 'wght' 200, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 14;
+}
+.cc-thismanthismonster-var {
+	font-family: 'cc-thismanthismonster-var', sans-serif;
+	font-variation-settings: 'CHEW' 0, 'WONK' 0, 'BITE' 0;
+	font-variation-settings: 'CHEW' 5, 'WONK' 10, 'BITE' 5;
+}
+.cc-ultimatum-force {
+	font-family: 'cc-ultimatum-force-variable', sans-serif;
+	font-variation-settings: 'wght' 200, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 15;
+}
+.cc-ultimatumvelocity-var {
+	font-family: 'cc-ultimatumvelocity-var', sans-serif;
+	font-variation-settings: 'wght' 200, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'ital' 15;
+}
+.cheee {
+	font-family: 'cheee-variable', sans-serif;
+	font-variation-settings: 'YEST' 0, 'GRVT' 0;
+	font-variation-settings: 'YEST' 1000, 'GRVT' 1000;
+}
+.climate-crisis {
+	font-family: 'climate-crisis-variable', sans-serif;
+	font-variation-settings: “YEAR” 1979;
+	font-variation-settings: “YEAR” 2050;
+}
+.cofo-peshka {
+	font-family: 'cofo-peshka-variable', sans-serif;
+	font-variation-settings: 'wdth' 50, 'wght' 200, 'slnt' -24;
+	font-variation-settings: 'wdth' 150, 'wght' 900, 'slnt' 24;
+}
+.cofo-sans-mono {
+	font-family: 'cofo-sans-mono-variable', sans-serif;
+	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 900;
+}
+.copperscript {
+	font-family: 'copperscript-variable', sans-serif;
+	font-variation-settings: 'wght' 200;
+	font-variation-settings: 'wght' 800;
+}
+.deuterium {
+	font-family: 'deuterium-variable', sans-serif;
+	font-variation-settings: “wght” 100;
+	font-variation-settings: “wght” 900;
+}
+.dilemma {
+	font-family: 'dilemma-variable', sans-serif;
+	font-variation-settings: 'ital' 0, 'wght' 400;
+	font-variation-settings: 'ital' 11, 'wght' 900;
+}
+.ds-ddungsang {
+	font-family: 'ds-ddungsang-variable', sans-serif;
+	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 800;
+}
+.elfreth {
+	font-family: 'elfreth-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.evolver {
+	font-family: 'evolver-variable', sans-serif;
+	font-variation-settings: 'wdth' 300, 'slnt' -11;
+	font-variation-settings: 'wdth' 700, 'slnt' 0;
+}
+.fact {
+	font-family: 'fact-variable', sans-serif;
+	font-variation-settings:  'wdth' 50, 'wght' 100;
+	font-variation-settings:  'wdth' 200, 'wght' 900;
+}
+.firelli {
+	font-family: 'firelli-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.fractul {
+	font-family: 'fractul-variable', sans-serif;
+	font-variation-settings: 'wght' 50;
+	font-variation-settings: 'wght' 900;
+}
+.gazzetta {
+	font-family: 'gazzetta-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.gimlet-sans {
+	font-family: 'gimlet-sans-variable', sans-serif;
+	font-variation-settings: 'opsz' 7, 'wght' 300, 'slnt' -9;
+	font-variation-settings: 'opsz' 36, 'wght' 900, 'slnt' 0;
+}
+.gotti {
+	font-family: 'gotti-variable', sans-serif;
+	font-variation-settings: 'wght' 900;
+	font-variation-settings: 'wght' 150;
+}
+.graveur {
+	font-family: 'graveur-variable', sans-serif;
+	font-variation-settings: 'opsz' 6, 'wght' 300;
+	font-variation-settings: 'opsz' 36, 'wght' 900;
+}
+.gyst {
+	font-family: 'gyst-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 700;
+}
+.havelock-titling {
+	font-family: 'havelock-titling-variable', sans-serif;
+	font-variation-settings: 'wght' 300;
+	font-variation-settings: 'wght' 900;
+}
+.hyperspace-race-cap {
+	font-family: 'hyperspace-race-cap-variable', sans-serif;
+	font-variation-settings: 'ital' 0, 'wdth' 50, 'wght' 200;
+	font-variation-settings: 'ital' 0, 'wdth' 200, 'wght' 900;
+}
+.hyperspace-race {
+	font-family: 'hyperspace-race-variable', sans-serif;
+	font-variation-settings: 'ital' 0, 'wdth' 50, 'wght' 200;
+	font-variation-settings: 'ital' 0, 'wdth' 200, 'wght' 900;
+}
+.iki-mono {
+	font-family: 'iki-mono-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 50;
+	font-variation-settings: 'wght' 700, 'wdth' 150;
+}
+.inge {
+	font-family: 'inge-variable', sans-serif;
+	font-variation-settings: 'slnt' -20;
+	font-variation-settings: 'slnt' 20;
+}
+.ivyepic {
+	font-family: 'ivyepic-variable', sans-serif;
+	font-variation-settings:  'wdth' 70, 'wght' 100, 'slnt' -10;
+	font-variation-settings: 'wdth' 100, 'wght' 100;
+}
+.ivymode {
+	font-family: 'ivymode-variable', sans-serif;
+	font-variation-settings: 'wght' 200, 'ital' 0;
+	font-variation-settings: 'wght' 700, 'ital' 1;
+}
+.ivysoft {
+	font-family: 'ivysoft-variable', sans-serif;
+	font-variation-settings: 'slnt' 0, 'wght' 100;
+	font-variation-settings: 'slnt' 1, 'wght' 900;
+}
+.jubilat {
+	font-family: 'jubilat-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.june-expt {
+	font-family: 'june-expt-variable', sans-serif;
+	font-variation-settings: 'STYL' 0;
+	font-variation-settings: 'STYL' 100;
+}
+.loew {
+	font-family: 'loew-variable', sans-serif;
+	font-variation-settings: 'wdth' 25, 'wght' 100, 'ital' 0;
+	font-variation-settings: 'wdth' 150, 'wght' 950, 'ital' 1;
+}
+.ltr-slab-extended {
+	font-family: 'ltr-slab-extended-variable', sans-serif;
+	font-variation-settings: 'wght' 300;
+	font-variation-settings: 'wght' 800;
+}
+.luke {
+	font-family: 'luke-variable', sans-serif;
+	font-variation-settings: 'FILL' 100, 'LINE' 100;
+	font-variation-settings: 'FILL' 300, 'LINE' 300;
+}
+.lunatique {
+	font-family: 'lunatique-variable', sans-serif;
+	font-variation-settings: 'wdth' 100;
+	font-variation-settings: 'wdth' 200;
+}
+.magari {
+	font-family: 'magari-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.magno-sans {
+	font-family: 'magno-sans-variable', sans-serif;
+	font-variation-settings:  'wght' 100;
+	font-variation-settings:  'wght' 900;
+}
+.magno-serif {
+	font-family: 'magno-serif-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.map-roman {
+	font-family: 'map-roman-variable', sans-serif;
+	font-variation-settings: 'wdth' 55;
+	font-variation-settings: 'wdth' 100;
+}
+.marlide-display {
+	font-family: 'marlide-display-variable', sans-serif;
+	font-variation-settings: 'wght' 300;
+	font-variation-settings: 'wght' 900;
+}
+.megascope {
+	font-family: 'megascope-variable', sans-serif;
+	font-variation-settings: 'SCOP' 0, 'wght' 100;
+	font-variation-settings: 'SCOP' 100, 'wght' 700;
+}
+.mendl-sans {
+	font-family: 'mendl-sans-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'STYL' 0;
+	font-variation-settings: 'wght' 900, 'STYL' 1;
+}
+.mendl-serif {
+	font-family: 'mendl-serif-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'STYL' 0;
+	font-variation-settings: 'wght' 900, 'STYL' 1;
+}
+.meursault {
+	font-family: 'meursault-variable', sans-serif;
+	font-variation-settings: 'wdth' 1, 'wght' 100;
+	font-variation-settings: 'wdth' 200 'wght' 800;
+}
+.minetto {
+	font-family: 'minetto-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.mode {
+	font-family: 'mode-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 50, 'CUTT' 50;
+	font-variation-settings: 'wght' 100, 'wdth' 50, 'CUTT' 50;
+}
+.mokoko {
+	font-family: 'mokoko-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.newsserif-huge {
+	font-family: 'newsserif-huge-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.newsserif-large {
+	font-family: 'newsserif-large-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.newsserif-text {
+	font-family: 'newsserif-text-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 900;
+}
+.nickel-gothic {
+	font-family: 'nickel-gothic-variable', sans-serif;
+	font-variation-settings: 'wdth' 25, 'slnt' -15;
+	font-variation-settings: 'wdth' 150, 'slnt' 15;
+}
+.norman {
+	font-family: 'norman-variable', sans-serif;
+	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 800;
+}
+.obviously {
+	font-family: 'obviously-variable', sans-serif;
+	font-variation-settings: 'wght' 200, 'wdth' 50, 'ital' 0;
+	font-variation-settings: 'wght' 900, 'wdth' 200, 'ital' 1;
+}
+.organetta {
+	font-family: 'organetta-variable', sans-serif;
+	font-variation-settings: 'wdth' 1, 'wght' 1;
+
+	font-variation-settings: 'wdth' 100, 'wght' 100;
+
+}
+.ouma-latin {
+	font-family: 'ouma-latin-variable', sans-serif;
+	font-variation-settings: 'wght' 100;
+	font-variation-settings: 'wght' 700;
+}
+.pauline-didone {
+	font-family: 'pauline-didone-variable', sans-serif;
+	font-variation-settings: 'wght' 1;
+	font-variation-settings: 'wght' 1000;
+}
+.peridot-pe {
+	font-family: 'peridot-pe-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 50, 'ital' 0;
+	font-variation-settings: 'wght' 950, 'wdth' 150, 'ital' 1;
+}
+.pf-grand-gothik {
+	font-family: 'pf-grand-gothik-variable', sans-serif;
+	font-variation-settings: 'wdth' 25, 'wght' 100, 'ital' 0;
+	font-variation-settings: 'wdth' 150, 'wght' 900, 'ital' 1;
+}
+.podium-sharp {
+	font-family: 'podium-sharp-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 50;
+	font-variation-settings: 'wght' 1000, 'wdth' 200
+}
+.roc-grotesk {
+	font-family: 'roc-grotesk-variable', sans-serif;
+	font-variation-settings: 'wdth' 50, 'wght' 100;
+	font-variation-settings: 'wdth' 150, 'wght' 900;
+}
+.rocinante-titling {
+	font-family: 'rocinante-titling-variable', sans-serif;
+	font-variation-settings: 'wght' 300, 'slnt' 0;
+	font-variation-settings: 'wght' 900, 'slnt' 12;
+}
+.salford-sans {
+	font-family: 'salford-sans-variable', sans-serif;
+	font-variation-settings: 'wght' 200, 'slnt' -11;
+	font-variation-settings: 'wght' 900, 'slnt' 0;
+}
+.seismic-latin {
+	font-family: 'seismic-latin-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'SEIS' 0;
+	font-variation-settings: 'wght' 700, 'SEIS' 100;
+}
+.sherborne {
+	font-family: 'sherborne-variable', sans-serif;
+	font-variation-settings: 'wght' 250, 'opsz' 12;
+	font-variation-settings: 'wght' 850, 'opsz' 72;
+}
+.silver-streak {
+	font-family: 'silver-streak-variable', sans-serif;
+	font-variation-settings: 'wdth' 50, 'wght' 100;
+	font-variation-settings: 'wdth' 200, 'wght' 900;
+}
+.source-code {
+	font-family: 'source-code-variable', sans-serif;
+	font-variation-settings: 'wght' 200;
+	font-variation-settings: 'wght' 900;
+}
+.stadio-now {
+	font-family: 'stadio-now-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'opsz' 100;
+	font-variation-settings: 'wght' 1000, 'opsz' 1000;
+}
+.stinger {
+	font-family: 'stinger-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 75;
+	font-variation-settings: 'wght' 800, 'wdth' 120;
+}
+.study {
+	font-family: 'study-variable', sans-serif;
+	font-variation-settings: 'wght' 300;
+	font-variation-settings: 'wght' 800;
+}
+.sway {
+	font-family: 'sway-variable', sans-serif;
+	font-variation-settings: 'CNST' 1, 'wght' 300;
+	font-variation-settings: 'CNST' 100, 'wght' 900;
+}
+.transducer {
+	font-family: 'transducer-variable', sans-serif;
+	font-variation-settings: 'wght' 100, 'wdth' 50, 'slnt' 0;
+	font-variation-settings: 'wght' 900, 'wdth' 200, 'slnt' -10;
+}
+.tumba {
+	font-family: 'tumba-variable', sans-serif;
+	font-variation-settings: 'wght' 300;
+	font-variation-settings: 'wght' 900;
+}
+.tuppence {
+	font-family: 'tuppence-variable', sans-serif;
+	font-variation-settings: 'wght' 200;
+	font-variation-settings: 'wght' 700;
+}
+.xanti-typewriter {
+	font-family: 'xanti-typewriter-variable', sans-serif;
+	font-variation-settings: 'wght' 25;
+	font-variation-settings: 'wght' 800;
+}
