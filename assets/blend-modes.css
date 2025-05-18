@@ -1,0 +1,142 @@
+
+/* MIX-BLEND-MODE */
+.multiply {
+    mix-blend-mode: multiply;
+}
+
+.screen {
+    mix-blend-mode: screen;
+}
+
+.overlay {
+    mix-blend-mode: overlay;
+}
+
+.darken {
+    mix-blend-mode: darken;
+}
+
+.lighten {
+    mix-blend-mode: lighten;
+}
+
+.color-dodge {
+    mix-blend-mode: color-dodge;
+}
+
+.color-burn {
+    mix-blend-mode: color-burn;
+}
+
+.hard-light {
+    mix-blend-mode: hard-light;
+}
+
+.soft-light {
+    mix-blend-mode: soft-light;
+}
+
+.difference {
+    mix-blend-mode: difference;
+}
+
+.exclusion {
+    mix-blend-mode: exclusion;
+}
+
+.hue {
+    mix-blend-mode: hue;
+}
+
+.saturation {
+    mix-blend-mode: saturation;
+}
+
+.color {
+    mix-blend-mode: color;
+}
+
+.luminosity {
+    mix-blend-mode: luminosity;
+}
+
+.plus-darker {
+    mix-blend-mode: plus-darker;
+}
+
+.plus-lighter {
+    mix-blend-mode: plus-lighter;
+}
+
+.normal {
+    mix-blend-mode: normal;
+}
+
+/* BACKGROUND-BLEND-MODE */
+.bg-multiply {
+    background-blend-mode: multiply;
+}
+
+.bg-screen {
+    background-blend-mode: screen;
+}
+
+.bg-overlay {
+    background-blend-mode: overlay;
+}
+
+.bg-darken {
+    background-blend-mode: darken;
+}
+
+.bg-lighten {
+    background-blend-mode: lighten;
+}
+
+.bg-color-dodge {
+    background-blend-mode: color-dodge;
+}
+
+.bg-color-burn {
+    background-blend-mode: color-burn;
+}
+
+.bg-hard-light {
+    background-blend-mode: hard-light;
+}
+
+.bg-soft-light {
+    background-blend-mode: soft-light;
+}
+
+.bg-difference {
+    background-blend-mode: difference;
+}
+
+.bg-exclusion {
+    background-blend-mode: exclusion;
+}
+
+.bg-hue {
+    background-blend-mode: hue;
+}
+
+.bg-saturation {
+    background-blend-mode: saturation;
+}
+
+.bg-color {
+    background-blend-mode: color;
+}
+
+.bg-luminosity {
+    background-blend-mode: luminosity;
+}
+
+.bg-plus-darker {
+    background-blend-mode: plus-darker;
+}
+
+.bg-plus-lighter {
+    background-blend-mode: plus-lighter;
+}
