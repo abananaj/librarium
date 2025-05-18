@@ -1,0 +1,61 @@
+:root {
+  /* Color Theme Swatches in Hex */
+  --hex1: #ebeef2;
+  --hex2: #113859;
+  --hex3: #403d36;
+  --hex4: #a6a198;
+  --hex5: #521406;
+
+  /* Color Theme Swatches in RGBA */
+  --rgba1: rgba(235, 238, 242, 1);
+  --rgba2: rgba(17, 56, 89, 1);
+  --rgba3: rgba(64, 61, 54, 1);
+  --rgba4: rgba(166, 161, 152, 1);
+  --rgba5: rgba(82, 20, 6, 1);
+
+  /* Color Theme Swatches in HSLA */
+  --hsla1: hsla(214, 21, 93, 1);
+  --hsla2: hsla(207, 67, 20, 1);
+  --hsla3: hsla(42, 8, 23, 1);
+  --hsla4: hsla(38, 7, 62, 1);
+  --hsla5: hsla(11, 86, 17, 1);
+
+  --background: #0e0033;
+  --background-alt: #fff6c9;
+  --text: #0e0033;
+  --text-alt: #e6f2e9;
+
+  --bs-primary: #002e0b;
+  --color1: #002e0b;
+  --color1a: #edfff1;
+  --color1b: #b6d1bc;
+  --color1c: #6bdb86;
+  --color1d: #378c4b;
+
+  --bs-secondary: #be2500;
+  --color2: #be2500;
+  --color2a: #ff704d;
+  --color2b: #ffe0d9;
+  --color2c: #cf8776;
+  --color2d: #4a0f00;
+
+  --color3: #f2b807;
+  --color3a: #ffedb8;
+  --color3b: #ffd966;
+  --color3c: #a67e05;
+  --color3d: #544003;
+
+  --color4: #001166;
+  --color4a: #ccd5ff;
+  --color4b: #7a88cc;
+  --color4c: #3d4d99;
+  --color4d: #000933;
+  --color5: #e6f2e9;
+
+  --bs-success: #378c4b;
+  --bs-info: #ccd5ff;
+  --bs-warning: #f2b807;
+  --bs-danger: #be2500;
+  --bs-light: #e6f2e9;
+  --bs-dark: #4a0f00;
+}

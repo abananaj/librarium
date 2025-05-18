@@ -1,0 +1,64 @@
+
+:root {
+
+    
+/* Color Theme Swatches in Hex */
+--hex1: #EBEEF2;
+--hex2: #113859;
+--hex3: #403D36;
+--hex4: #A6A198;
+--hex5: #521406;
+
+/* Color Theme Swatches in RGBA */
+--rgba1: rgba(235,238,242, 1);
+--rgba2: rgba(17,56,89, 1);
+--rgba3: rgba(64,61,54, 1);
+--rgba4: rgba(166,161,152, 1);
+--rgba5: rgba(82,20,6, 1);
+
+/* Color Theme Swatches in HSLA */
+--hsla1: hsla(214, 21, 93, 1);
+--hsla2: hsla(207, 67, 20, 1);
+--hsla3: hsla(42, 8, 23, 1);
+--hsla4: hsla(38, 7, 62, 1);
+--hsla5: hsla(11, 86, 17, 1);
+
+    --background: #0E0033;
+    --background-alt: #FFF6C9;
+    --text: #0E0033;
+    --text-alt: #E6F2E9;
+
+    --bs-primary: #002E0B;
+    --color1: #002E0B;
+    --color1a: #EDFFF1;
+    --color1b: #B6D1BC;
+    --color1c: #6BDB86;
+    --color1d: #378C4B;
+
+    --bs-secondary: #BE2500;
+    --color2: #BE2500;
+    --color2a: #FF704D;
+    --color2b: #FFE0D9;
+    --color2c: #CF8776;
+    --color2d: #4A0F00;
+
+    --color3: #F2B807;
+    --color3a: #FFEDB8;
+    --color3b: #FFD966;
+    --color3c: #A67E05;
+    --color3d: #544003;
+
+    --color4: #001166;
+    --color4a: #CCD5FF;
+    --color4b: #7A88CC;
+    --color4c: #3D4D99;
+    --color4d: #000933;
+    --color5: #E6F2E9;
+
+    --bs-success: #378C4B;
+    --bs-info: #CCD5FF;
+    --bs-warning: #F2B807;
+    --bs-danger: #BE2500;
+    --bs-light: #E6F2E9;
+    --bs-dark: #4A0F00;
+}

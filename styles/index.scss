@@ -1,7 +1,10 @@
-// load custom font from google fonts
-@import url('https://use.typekit.net/hif2dht.css');
-@import url("https://use.typekit.net/qxm4hdp.css");
-@import url("https://use.typekit.net/toy1dtd.css");
+// ================== load custom font from adobe fonts
+// THEATRUM TYPEKIT
+ @import url("https://use.typekit.net/qxm4hdp.css");
+// ABSTRACT TYPEKIT
+ @import url("https://use.typekit.net/toy1dtd.css");
+// AJ TYPEKIT
+ @import url("https://use.typekit.net/hif2dht.css");
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "/node_modules/bootstrap/scss/functions";
@@ -22,6 +25,8 @@ $secondary: #16be7e;
 $light: #fff9f1;
 
 // font family
+$font-family-base: "roc-grotesk-variable",serif;
+$font-family-base: "meursault-variable",serif;
 $font-family-base: "bc-sklonar", monospace;
 
 // font sizes
@@ -78,8 +83,6 @@ $border-color: $primary;
 
 // import variables and mixins files (so you can use them below)
 // any redefined vars above will be incorporated into the files (e.g. in maps)
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/variables-dark";
 @import "/node_modules/bootstrap/scss/maps";
 @import "/node_modules/bootstrap/scss/mixins";
 
