@@ -1,4 +1,4 @@
 # *.npmrc
 *.ini
 *.png
-./design-system/template-sg/
+/design-system/exemplum
