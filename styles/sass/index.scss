@@ -25,25 +25,30 @@ $warning: #f2b807;
 $danger: #be2500;
 
 // =========== FONT FAMILY
-// @import "typography";
+@import "font-variation-settings";
+@import "headings";
+
+body {
+  font-variation-settings: $varRegLight;
+}
 $meursault: "meursault-variable", serif;
 $obviously: "obviously-variable", sans-serif;
 
-$font-family-serif: $meursault;
-$font-family-sans-serif: $obviously;
-$font-family-base:  $obviously;
-$headings-font-family: $obviously;
+$font-family-serif: "meursault-variable", serif;
+$font-family-sans-serif: "obviously-variable", sans-serif;
+$font-family-base: "obviously-variable", sans-serif;
+$font-family-sans-serif: "obviously-variable", sans-serif;
 
 // =========== FONT SIZES
 $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.618;
 
-// // =========== HEADINGS
-// $headings-font-weight: 300;
-// $headings-line-height: 1.5;
-// $h1-font-size: $font-size-base * 2.75;
+// =========== HEADINGS
+$headings-font-weight: 300;
+$headings-line-height: 1.5;
+$h1-font-size: $font-size-base * 2.75;
 
-// // // =========== LINKS
+// // =========== LINKS
 // $link-color: $secondary;
 // $link-decoration: none;
 // $link-hover-decoration: underline;
@@ -111,11 +116,11 @@ $border-color: $primary;
 
 // add colors to theme
 $custom-colors: (
-"paprika": #990033,
-"black-rose": #660033,
-"athens-gray": #F0F2F5,
-"tiber": #003333,
-"blue-stone": #006664,
+  paprika: #990033,
+  black-rose: #660033,
+  athens-gray: #f0f2f5,
+  tiber: #003333,
+  blue-stone: #006664,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -126,22 +131,22 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // add classes for color pallette colors
 @each $color, $val in $colors {
   .bg-#{$color} {
-    background-color: $val
+    background-color: $val;
   }
   .bg-#{$color}-light {
-    background-color: tint-color($val, 80%)
+    background-color: tint-color($val, 80%);
   }
   .bg-#{$color}-dark {
-    background-color: shade-color($val, 30%)
+    background-color: shade-color($val, 30%);
   }
   .text-#{$color} {
-    color: $val
+    color: $val;
   }
   .text-#{$color}-light {
-    color: tint-color($val, 80%)
+    color: tint-color($val, 80%);
   }
   .text-#{$color}-dark {
-    color: shade-color($val, 30%)
+    color: shade-color($val, 30%);
   }
 }
 
@@ -156,21 +161,93 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // adding utilities
 $custom-utilities: (
-  "fontVar": (
+  "var": (
     property: font-variation-settings,
-    class: fontVar,
+    class: var,
     values: (
-      0: rotate(0deg),
-      20: rotate(20deg),
-      40: rotate(40deg),
-      60: rotate(60deg),
-      80: rotate(80deg),
-      100: rotate(100deg),
-      120: rotate(120deg),
-      140: rotate(140deg),
-      160: rotate(160deg),
-      180: rotate(180deg),
-    )
+      compThin: $varCompThin,
+      condThin: $varCondThin,
+      narThin: $varNarThin,
+      regThin: $varRegThin,
+      wideThin: $varWideThin,
+      extThin: $varExtThin,
+      maxThin: $varMaxThin,
+      compLight: $varCompLight,
+      condLight: $varCondLight,
+      narLight: $varNarLight,
+      regLight: $varRegLight,
+      wideLight: $varWideLight,
+      extLight: $varExtLight,
+      maxLight: $varMaxLight,
+      compNorm: $varCompNorm,
+      condNorm: $varCondNorm,
+      narNorm: $varNarNorm,
+      regNorm: $varRegNorm,
+      wideNorm: $varWideNorm,
+      extNorm: $varExtNorm,
+      maxNorm: $varMaxNorm,
+      compMed: $varCompMed,
+      condMed: $varCondMed,
+      narMed: $varNarMed,
+      regMed: $varRegMed,
+      wideMed: $varWideMed,
+      extMed: $varExtMed,
+      maxMed: $varMaxMed,
+      compSemi: $varCompSemi,
+      condSemi: $varCondSemi,
+      narSemi: $varNarSemi,
+      regSemi: $varRegSemi,
+      wideSemi: $varWideSemi,
+      extSemi: $varExtSemi,
+      maxSemi: $varMaxSemi,
+      compBold: $varCompBold,
+      condBold: $varCondBold,
+      narBold: $varNarBold,
+      regBold: $varRegBold,
+      wideBold: $varWideBold,
+      extBold: $varExtBold,
+      maxBold: $varMaxBold,
+      compBlack: $varCompBlack,
+      condBlack: $varCondBlack,
+      narBlack: $varNarBlack,
+      regBlack: $varRegBlack,
+      wideBlack: $varWideBlack,
+      extBlack: $varExtBlack,
+      maxBlack: $varMaxBlack,
+      compSuper: $varCompSuper,
+      condSuper: $varCondSuper,
+      narSuper: $varNarSuper,
+      regSuper: $varRegSuper,
+      wideSuper: $varWideSuper,
+      extSuper: $varExtSuper,
+      maxSuper: $varMaxSuper,
+    ),
+  ),
+  "varWght": (
+    property: font-weight,
+    class: varWght,
+    values: (
+      thin: 200,
+      light: 300,
+      reg: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      black: 800,
+      super: 900,
+    ),
+  ),
+  "varWdth": (
+    property: font-stretch,
+    class: varWdth,
+    values: (
+      comp: 50,
+      cond: 60,
+      narr: 80,
+      reg: 100,
+      wide: 150,
+      ext: 200,
+    ),
   ),
   "opacity": (
     property: opacity,
@@ -178,11 +255,11 @@ $custom-utilities: (
     state: hover,
     values: (
       0: 0,
-      25: .25,
-      50: .5,
-      75: .75,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
       100: 1,
-    )
+    ),
   ),
 );
 $utilities: map-merge($utilities, $custom-utilities);
