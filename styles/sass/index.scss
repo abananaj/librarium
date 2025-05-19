@@ -15,16 +15,15 @@ $enable-negative-margins: true;
 $enable-smooth-scroll: false;
 
 // // =========== THEME COLOR VARIABLES
-@import "colors";
-// $primary: #ff3287;
-// $secondary: #16be7e;
-// $light: #fff9f1;
-// $success: #378c4b;
-// $info: #ccd5ff;
-// $warning: #f2b807;
-// $danger: #be2500;
-// $light: #e6f2e9;
-// $dark: #4a0f00;
+@import "color-palette";
+$primary: $paprika;
+$secondary: $tiber;
+$light: $athens-gray;
+$dark: $tiber;
+$success: $blue-stone;
+$info: #ccd5ff;
+$warning: #f2b807;
+$danger: #be2500;
 
 // =========== FONT FAMILY
 $font-family-base: "meursault-variable", serif;
@@ -61,16 +60,26 @@ $grid-breakpoints: (
   xxl: 1600px,
 );
 
-// // spacers
-// $spacer: 1.5rem;
-// $spacers: (
-//   0: 0,
-//   1: $spacer / 4,
-//   2: $spacer / 2,
-//   3: $spacer,
-//   4: $spacer * 2,
-//   5: $spacer * 4,
-// );
+// headings 
+$heading-size: (
+h1: 4.23rem,
+h2: 2.62rem,
+h3: 1.618rem,
+h4: 1.33rem,
+h5: 1.25rem,
+h6: 1rem,
+);
+
+// spacers
+$spacer: 8px;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
 
 // borders
 // $border-width: 3px;
