@@ -1,10 +1,5 @@
 // ================== load custom font from adobe fonts
-// THEATRUM TYPEKIT
-//  @import url("https://use.typekit.net/qxm4hdp.css");
-// ABSTRACT TYPEKIT
-//  @import url("https://use.typekit.net/toy1dtd.css");
-// AJ TYPEKIT
- @import url("https://use.typekit.net/hif2dht.css");
+@import url("https://use.typekit.net/toy1dtd.css");
 
 // ===========  1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "/node_modules/bootstrap/scss/functions";
@@ -20,24 +15,26 @@ $enable-negative-margins: true;
 $enable-smooth-scroll: false;
 
 // // =========== THEME COLOR VARIABLES
+@import "colors";
 // $primary: #ff3287;
 // $secondary: #16be7e;
 // $light: #fff9f1;
+// $success: #378c4b;
+// $info: #ccd5ff;
+// $warning: #f2b807;
+// $danger: #be2500;
+// $light: #e6f2e9;
+// $dark: #4a0f00;
 
-// // =========== FONT FAMILY
-// theatrum
-// $font-family-base: "bc-sklonar", monospace;
-// ABSTRACT
-// $font-family-base: "roc-grotesk-variable",serif;
-// AJ
-$font-family-base: "meursault-variable",serif;
+// =========== FONT FAMILY
+$font-family-base: "meursault-variable", serif;
 
 // =========== FONT SIZES
 $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.618;
 
 // // =========== HEADINGS
-// $headings-font-weight: 300; 
+// $headings-font-weight: 300;
 // $headings-line-height: 1.5;
 // $h1-font-size: $font-size-base * 2.75;
 
@@ -47,7 +44,6 @@ $lead-font-size: $font-size-base * 1.618;
 // $link-hover-decoration: underline;
 // $link-shade-percentage: 30%;
 // $link-hover-color: shift-color($link-color, -$link-shade-percentage);
-
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "/node_modules/bootstrap/scss/variables";
@@ -62,7 +58,7 @@ $grid-breakpoints: (
   md: 787px,
   lg: 1024px,
   xl: 1360px,
-  xxl: 1600px
+  xxl: 1600px,
 );
 
 // // spacers
@@ -83,7 +79,7 @@ $border-widths: (
   2: 3px,
   3: 5px,
   4: 7px,
-  5: 9px
+  5: 9px,
 );
 $border-color: $primary;
 
@@ -189,4 +185,4 @@ $border-color: $primary;
 // $utilities: map-merge($utilities, $modified-utilities);
 
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
-@import "/node_modules/bootstrap/scss/bootstrap"; 
+@import "/node_modules/bootstrap/scss/bootstrap";
