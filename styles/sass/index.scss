@@ -1,6 +1,5 @@
 // ================== load custom font from adobe fonts
-@import url("https://use.typekit.net/toy1dtd.css");
-
+@import url("https://use.typekit.net/hif2dht.css");
 // ===========  1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "/node_modules/bootstrap/scss/functions";
 
@@ -26,7 +25,14 @@ $warning: #f2b807;
 $danger: #be2500;
 
 // =========== FONT FAMILY
-$font-family-base: "meursault-variable", serif;
+// @import "typography";
+$meursault: "meursault-variable", serif;
+$obviously: "obviously-variable", sans-serif;
+
+$font-family-serif: $meursault;
+$font-family-sans-serif: $obviously;
+$font-family-base:  $obviously;
+$headings-font-family: $obviously;
 
 // =========== FONT SIZES
 $font-size-base: 1rem;
@@ -60,14 +66,14 @@ $grid-breakpoints: (
   xxl: 1600px,
 );
 
-// headings 
+// headings
 $heading-size: (
-h1: 4.23rem,
-h2: 2.62rem,
-h3: 1.618rem,
-h4: 1.33rem,
-h5: 1.25rem,
-h6: 1rem,
+  h1: 4.23rem,
+  h2: 2.62rem,
+  h3: 1.618rem,
+  h4: 1.33rem,
+  h5: 1.25rem,
+  h6: 1rem,
 );
 
 // spacers
@@ -97,43 +103,47 @@ $border-color: $primary;
 @import "/node_modules/bootstrap/scss/maps";
 @import "/node_modules/bootstrap/scss/mixins";
 
-// // anything that depends on variables/mixins file defined below
-// .btn-truncate {
-//   max-width: 100px;
-//   @include text-truncate;
-// }
+// anything that depends on variables/mixins file defined below
+.btn-truncate {
+  max-width: 100px;
+  @include text-truncate;
+}
 
-// // add colors to theme
-// $custom-colors: (
-//   "primary-light": #fff8fb,
-//   "secondary-light": #f6fffb
-// );
-// $theme-colors: map-merge($theme-colors, $custom-colors);
+// add colors to theme
+$custom-colors: (
+"paprika": #990033,
+"black-rose": #660033,
+"athens-gray": #F0F2F5,
+"tiber": #003333,
+"blue-stone": #006664,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // // remove colors from theme
 // $theme-colors: map-remove($theme-colors, "danger");
 
-// // add classes for color pallette colors
-// @each $color, $val in $colors {
-//   .bg-#{$color} {
-//     background-color: $val
-//   }
-//   .bg-#{$color}-light {
-//     background-color: tint-color($val, 80%)
-//   }
-//   .bg-#{$color}-dark {
-//     background-color: shade-color($val, 30%)
-//   }
-//   .text-#{$color} {
-//     color: $val
-//   }
-//   .text-#{$color}-light {
-//     color: tint-color($val, 80%)
-//   }
-//   .text-#{$color}-dark {
-//     color: shade-color($val, 30%)
-//   }
-// }
+// add classes for color pallette colors
+@each $color, $val in $colors {
+  .bg-#{$color} {
+    background-color: $val
+  }
+  .bg-#{$color}-light {
+    background-color: tint-color($val, 80%)
+  }
+  .bg-#{$color}-dark {
+    background-color: shade-color($val, 30%)
+  }
+  .text-#{$color} {
+    color: $val
+  }
+  .text-#{$color}-light {
+    color: tint-color($val, 80%)
+  }
+  .text-#{$color}-dark {
+    color: shade-color($val, 30%)
+  }
+}
 
 // // add display heading
 // $custom-display-font-sizes: (
@@ -144,38 +154,38 @@ $border-color: $primary;
 // utility api - import utility file first
 @import "/node_modules/bootstrap/scss/utilities";
 
-// // adding utilities
-// $custom-utilities: (
-//   "rotate": (
-//     property: transform,
-//     class: rotate,
-//     values: (
-//       0: rotate(0deg),
-//       20: rotate(20deg),
-//       40: rotate(40deg),
-//       60: rotate(60deg),
-//       80: rotate(80deg),
-//       100: rotate(100deg),
-//       120: rotate(120deg),
-//       140: rotate(140deg),
-//       160: rotate(160deg),
-//       180: rotate(180deg),
-//     )
-//   ),
-//   "opacity": (
-//     property: opacity,
-//     class: o,
-//     state: hover,
-//     values: (
-//       0: 0,
-//       25: .25,
-//       50: .5,
-//       75: .75,
-//       100: 1,
-//     )
-//   ),
-// );
-// $utilities: map-merge($utilities, $custom-utilities);
+// adding utilities
+$custom-utilities: (
+  "fontVar": (
+    property: font-variation-settings,
+    class: fontVar,
+    values: (
+      0: rotate(0deg),
+      20: rotate(20deg),
+      40: rotate(40deg),
+      60: rotate(60deg),
+      80: rotate(80deg),
+      100: rotate(100deg),
+      120: rotate(120deg),
+      140: rotate(140deg),
+      160: rotate(160deg),
+      180: rotate(180deg),
+    )
+  ),
+  "opacity": (
+    property: opacity,
+    class: o,
+    state: hover,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+);
+$utilities: map-merge($utilities, $custom-utilities);
 
 // // modifying utilities
 // $modified-utilities: (
@@ -195,3 +205,4 @@ $border-color: $primary;
 
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
 @import "/node_modules/bootstrap/scss/bootstrap";
+
