@@ -1,7 +1,4 @@
-// ================== load custom font from adobe fonts
-@import url("https://use.typekit.net/hif2dht.css");
 @import url("https://use.typekit.net/qxm4hdp.css");
-@import url("https://use.typekit.net/toy1dtd.css");
 // ===========  1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "/node_modules/bootstrap/scss/functions";
 
@@ -10,7 +7,7 @@
 // @import "sass/bs-var";
 
 // =========== GLOBAL VARIABLE
-$enable-rounded: enable;
+$enable-rounded: disable;
 $enable-button-pointers: false;
 $enable-negative-margins: true;
 $enable-smooth-scroll: false;
@@ -19,63 +16,86 @@ $enable-smooth-scroll: false;
 @import "color-palette";
 $primary: $hex1;
 $secondary: $hex2;
-$light: $saltpan;
-$dark: $diesel;
-$success: #032603;
-$info: #19113B;
-$warning: $golden-grass;
-$danger: #df141b;
+$tertiary: $hex3;
+$quaternary: $hex4;
+$quininary: $hex5;
+$light: $citrine;
+$dark: $black-russian;
+$success: #289976;
+$info: #0b28bd;
+$warning: #f1e149;
+$danger: #c21831;
 
 // =========== FONT FAMILY
-$hwt-mardell: "hwt-mardell",sans-serif;
-$roc-grotesk: "roc-grotesk-variable",sans-serif;
-$mendl-serif: "mendl-serif-variable", serif;
-$mendl-sans: "mendl-sans-variable",sans-serif;
-$gridlite-pe: "gridlite-pe-variable",sans-serif;
+$bc-sklonar: "bc-sklonar", sans-serif;
+$sirenne: "sirenne-six-mvb", serif;
+$sirenne-sc: "sirenne-six-mvb-roman-small", serif;
+$p22-elizabethan: "p22-elizabethan", sans-serif;
 
+$font-family-serif: $sirenne;
+// $font-family-sans-serif: $mendl-sans;
+$font-family-base: $sirenne;
+$font-family-monospace: $bc-sklonar;
+$font-family-code: $bc-sklonar;
+$headings-font-family: $sirenne-sc;
 
-$font-family-serif: $mendl-serif;
-$font-family-sans-serif: $mendl-sans;
-$font-family-base: $roc-grotesk;
-// $font-family-monospace: ;
-// $font-family-code: ;
-$headings-font-family:        $mendl-serif;
-
-$display-font-family:         $headings-font-family;
-$input-btn-font-family:       $roc-grotesk;
-$btn-font-family:             $input-btn-font-family !default;
-$input-font-family:           $input-btn-font-family !default;
-$form-select-font-family:     $input-font-family !default;
+$display-font-family: $p22-elizabethan;
+$input-btn-font-family: $bc-sklonar;
+$btn-font-family: $bc-sklonar; 
+$input-font-family: $input-btn-font-family !default;
+$form-select-font-family: $input-font-family !default;
 
 // =========== FONT SIZES
-$font-size-base: 1rem;
+$font-size-base: 1.1rem;
 $lead-font-size: $font-size-base * 1.618;
 
 // =========== HEADINGS
-$headings-font-style:         null !default;
-$headings-font-weight:        500;
-$headings-line-height:        1.5;
-$headings-color:              inherit !default;
+$headings-font-style: null !default;
+$headings-font-weight: 400;
+$headings-line-height: 1.5;
+$headings-color: $violent-violet;
 
-$h1-font-size:                $font-size-base * 4.3;
-$h2-font-size:                $font-size-base * 3.26;
-$h3-font-size:                $font-size-base * 2.62;
-$h4-font-size:                $font-size-base * 1.618;
-$h5-font-size:                $font-size-base * 1.33;
-$h6-font-size:                $font-size-base * 1.1;
+$h1-font-size: $font-size-base * 4.3;
+$h2-font-size: $font-size-base * 3.26;
+$h3-font-size: $font-size-base * 2.62;
+$h4-font-size: $font-size-base * 1.618;
+$h5-font-size: $font-size-base * 1.33;
+$h6-font-size: $font-size-base * 1.25;
 
 // // =========== LINKS
-// $link-color: $secondary;
-// $link-decoration: none;
-// $link-hover-decoration: underline;
-// $link-shade-percentage: 30%;
-// $link-hover-color: shift-color($link-color, -$link-shade-percentage);
+$link-color: $red-devil;
+$link-decoration: underline;
+$link-hover-decoration: none;
+$link-shade-percentage: 30%;
+$link-hover-color: shift-color($link-color, -$link-shade-percentage);
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "/node_modules/bootstrap/scss/variables";
 @import "/node_modules/bootstrap/scss/variables-dark";
 
+// Badges
+$badge-font-size:                   .85em;
+$badge-font-weight:                 300;
+
 // 4. Include any default map overrides here
+// display headings font sizes
+$display-font-sizes: (
+  1: 11rem,
+  2: 9rem,
+  3: 7rem,
+  4: 5rem,
+  5: 4rem,
+  6: 3rem
+);
+// headings
+$heading-size: (
+  h1: 5.5rem,
+  h2: 4.23rem,
+  h3: 2.62rem,
+  h4: 1.618rem,
+  h5: 1.33rem,
+  h6: 1rem,
+);
 
 // breakpoints
 $grid-breakpoints: (
@@ -117,6 +137,7 @@ $border-widths: (
   4: 7px,
   5: 9px,
 );
+
 $border-color: $primary;
 
 // import variables and mixins files (so you can use them below)
@@ -132,11 +153,17 @@ $border-color: $primary;
 
 // add colors to theme
 $custom-colors: (
-  paprika: #990033,
-  black-rose: #660033,
-  athens-gray: #f0f2f5,
-  tiber: #003333,
-  blue-stone: #006664,
+  tertiary: $hex3,
+  quaternary: $hex4,
+  quininary: $hex5,
+  black-russian: $black-russian,
+  gulf-blue: $gulf-blue,
+  violent-violet: $violent-violet,
+  red-devil: $red-devil,
+  chenin: $chenin,
+  magnolia: $magnolia,
+  half-and-half: $half-and-half,
+  citrine: $citrine,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -239,20 +266,21 @@ $custom-utilities: (
   //     maxSuper: $varMaxSuper,
   //   ),
   // ),
-  "varWght": (
-    property: font-weight,
-    class: varWght,
-    values: (
-      thin: 200,
-      light: 300,
-      reg: 400,
-      medium: 500,
-      semibold: 600,
-      bold: 700,
-      black: 800,
-      super: 900,
+  "varWght":
+    (
+      property: font-weight,
+      class: varWght,
+      values: (
+        thin: 200,
+        light: 300,
+        reg: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        black: 800,
+        super: 900,
+      ),
     ),
-  ),
   "varWdth": (
     property: font-stretch,
     class: varWdth,
@@ -276,7 +304,7 @@ $custom-utilities: (
       75: 0.75,
       100: 1,
     ),
-  ),
+  )
 );
 $utilities: map-merge($utilities, $custom-utilities);
 
