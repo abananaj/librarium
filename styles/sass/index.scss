@@ -1,5 +1,7 @@
 // ================== load custom font from adobe fonts
 @import url("https://use.typekit.net/hif2dht.css");
+@import url("https://use.typekit.net/qxm4hdp.css");
+@import url("https://use.typekit.net/toy1dtd.css");
 // ===========  1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "/node_modules/bootstrap/scss/functions";
 
@@ -15,38 +17,52 @@ $enable-smooth-scroll: false;
 
 // // =========== THEME COLOR VARIABLES
 @import "color-palette";
-$primary: $paprika;
-$secondary: $tiber;
-$light: $athens-gray;
-$dark: $tiber;
-$success: $blue-stone;
-$info: #ccd5ff;
-$warning: #f2b807;
-$danger: #be2500;
+$primary: $hex1;
+$secondary: $hex2;
+$light: $saltpan;
+$dark: $diesel;
+$success: #032603;
+$info: #19113B;
+$warning: $golden-grass;
+$danger: #df141b;
 
 // =========== FONT FAMILY
-@import "font-variation-settings";
-@import "headings";
+$hwt-mardell: "hwt-mardell",sans-serif;
+$roc-grotesk: "roc-grotesk-variable",sans-serif;
+$mendl-serif: "mendl-serif-variable", serif;
+$mendl-sans: "mendl-sans-variable",sans-serif;
+$gridlite-pe: "gridlite-pe-variable",sans-serif;
 
-body {
-  font-variation-settings: $varRegLight;
-}
-$meursault: "meursault-variable", serif;
-$obviously: "obviously-variable", sans-serif;
 
-$font-family-serif: "meursault-variable", serif;
-$font-family-sans-serif: "obviously-variable", sans-serif;
-$font-family-base: "obviously-variable", sans-serif;
-$font-family-sans-serif: "obviously-variable", sans-serif;
+$font-family-serif: $mendl-serif;
+$font-family-sans-serif: $mendl-sans;
+$font-family-base: $roc-grotesk;
+// $font-family-monospace: ;
+// $font-family-code: ;
+$headings-font-family:        $mendl-serif;
+
+$display-font-family:         $headings-font-family;
+$input-btn-font-family:       $roc-grotesk;
+$btn-font-family:             $input-btn-font-family !default;
+$input-font-family:           $input-btn-font-family !default;
+$form-select-font-family:     $input-font-family !default;
 
 // =========== FONT SIZES
 $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.618;
 
 // =========== HEADINGS
-$headings-font-weight: 300;
-$headings-line-height: 1.5;
-$h1-font-size: $font-size-base * 2.75;
+$headings-font-style:         null !default;
+$headings-font-weight:        500;
+$headings-line-height:        1.5;
+$headings-color:              inherit !default;
+
+$h1-font-size:                $font-size-base * 4.3;
+$h2-font-size:                $font-size-base * 3.26;
+$h3-font-size:                $font-size-base * 2.62;
+$h4-font-size:                $font-size-base * 1.618;
+$h5-font-size:                $font-size-base * 1.33;
+$h6-font-size:                $font-size-base * 1.1;
 
 // // =========== LINKS
 // $link-color: $secondary;
@@ -161,68 +177,68 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // adding utilities
 $custom-utilities: (
-  "var": (
-    property: font-variation-settings,
-    class: var,
-    values: (
-      compThin: $varCompThin,
-      condThin: $varCondThin,
-      narThin: $varNarThin,
-      regThin: $varRegThin,
-      wideThin: $varWideThin,
-      extThin: $varExtThin,
-      maxThin: $varMaxThin,
-      compLight: $varCompLight,
-      condLight: $varCondLight,
-      narLight: $varNarLight,
-      regLight: $varRegLight,
-      wideLight: $varWideLight,
-      extLight: $varExtLight,
-      maxLight: $varMaxLight,
-      compNorm: $varCompNorm,
-      condNorm: $varCondNorm,
-      narNorm: $varNarNorm,
-      regNorm: $varRegNorm,
-      wideNorm: $varWideNorm,
-      extNorm: $varExtNorm,
-      maxNorm: $varMaxNorm,
-      compMed: $varCompMed,
-      condMed: $varCondMed,
-      narMed: $varNarMed,
-      regMed: $varRegMed,
-      wideMed: $varWideMed,
-      extMed: $varExtMed,
-      maxMed: $varMaxMed,
-      compSemi: $varCompSemi,
-      condSemi: $varCondSemi,
-      narSemi: $varNarSemi,
-      regSemi: $varRegSemi,
-      wideSemi: $varWideSemi,
-      extSemi: $varExtSemi,
-      maxSemi: $varMaxSemi,
-      compBold: $varCompBold,
-      condBold: $varCondBold,
-      narBold: $varNarBold,
-      regBold: $varRegBold,
-      wideBold: $varWideBold,
-      extBold: $varExtBold,
-      maxBold: $varMaxBold,
-      compBlack: $varCompBlack,
-      condBlack: $varCondBlack,
-      narBlack: $varNarBlack,
-      regBlack: $varRegBlack,
-      wideBlack: $varWideBlack,
-      extBlack: $varExtBlack,
-      maxBlack: $varMaxBlack,
-      compSuper: $varCompSuper,
-      condSuper: $varCondSuper,
-      narSuper: $varNarSuper,
-      regSuper: $varRegSuper,
-      wideSuper: $varWideSuper,
-      extSuper: $varExtSuper,
-      maxSuper: $varMaxSuper,
-    ),
-  ),
+  // "var": (
+  //   property: font-variation-settings,
+  //   class: var,
+  //   values: (
+  //     compThin: $varCompThin,
+  //     condThin: $varCondThin,
+  //     narThin: $varNarThin,
+  //     regThin: $varRegThin,
+  //     wideThin: $varWideThin,
+  //     extThin: $varExtThin,
+  //     maxThin: $varMaxThin,
+  //     compLight: $varCompLight,
+  //     condLight: $varCondLight,
+  //     narLight: $varNarLight,
+  //     regLight: $varRegLight,
+  //     wideLight: $varWideLight,
+  //     extLight: $varExtLight,
+  //     maxLight: $varMaxLight,
+  //     compNorm: $varCompNorm,
+  //     condNorm: $varCondNorm,
+  //     narNorm: $varNarNorm,
+  //     regNorm: $varRegNorm,
+  //     wideNorm: $varWideNorm,
+  //     extNorm: $varExtNorm,
+  //     maxNorm: $varMaxNorm,
+  //     compMed: $varCompMed,
+  //     condMed: $varCondMed,
+  //     narMed: $varNarMed,
+  //     regMed: $varRegMed,
+  //     wideMed: $varWideMed,
+  //     extMed: $varExtMed,
+  //     maxMed: $varMaxMed,
+  //     compSemi: $varCompSemi,
+  //     condSemi: $varCondSemi,
+  //     narSemi: $varNarSemi,
+  //     regSemi: $varRegSemi,
+  //     wideSemi: $varWideSemi,
+  //     extSemi: $varExtSemi,
+  //     maxSemi: $varMaxSemi,
+  //     compBold: $varCompBold,
+  //     condBold: $varCondBold,
+  //     narBold: $varNarBold,
+  //     regBold: $varRegBold,
+  //     wideBold: $varWideBold,
+  //     extBold: $varExtBold,
+  //     maxBold: $varMaxBold,
+  //     compBlack: $varCompBlack,
+  //     condBlack: $varCondBlack,
+  //     narBlack: $varNarBlack,
+  //     regBlack: $varRegBlack,
+  //     wideBlack: $varWideBlack,
+  //     extBlack: $varExtBlack,
+  //     maxBlack: $varMaxBlack,
+  //     compSuper: $varCompSuper,
+  //     condSuper: $varCondSuper,
+  //     narSuper: $varNarSuper,
+  //     regSuper: $varRegSuper,
+  //     wideSuper: $varWideSuper,
+  //     extSuper: $varExtSuper,
+  //     maxSuper: $varMaxSuper,
+  //   ),
+  // ),
   "varWght": (
     property: font-weight,
     class: varWght,
