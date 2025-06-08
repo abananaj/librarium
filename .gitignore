@@ -5,3 +5,4 @@
 *.min.css.map
 _*/
 _webpack/
+_webpack-babel/
