@@ -3,4 +3,4 @@
 **/node_modules/
 *.min.css
 *.min.css.map
-_*/
+./_*/
