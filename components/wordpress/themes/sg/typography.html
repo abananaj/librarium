@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Typography</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <!--ADOBE FONTS-->
+        <link rel="stylesheet" href="https://use.typekit.net/wqa0llu.css">
+        <!--custom styles-->
+        <link rel="stylesheet" href="css\style.css">
+        <!--style guide styles -->
+        <link rel="stylesheet" href="css\style-guide.css">
+        <link rel="stylesheet" href="css\sg-animation.css">
+    </head>
+<!--local css-->
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="container-fluid" id="headerMenu">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M352 48V176H224V48H352zM224 32H208V48 176v16h16 56v56H80 72v8 64H16 0v16V464v16H16 144h16V464 336 320H144 88V264H280v56H224 208v16V464v16h16H352h16V464 336 320H352 296V264H488v56H432 416v16V464v16h16H560h16V464 336 320H560 504V256v-8h-8H296V192h56 16V176 48 32H352 224zM16 464V336H144V464H16zM224 336H352V464H224V336zM432 464V336H560V464H432z"/></svg>Index</a></li>
+                        <li><a href="typography.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M64 0V8 160H80V16H372.7L432 75.3V160h16V72 68.7l-2.3-2.3-64-64L379.3 0H376 72 64zM331.3 235.3L358.6 208H496v64H16V208H153.4l27.3 27.3c3 3 7.1 4.7 11.3 4.7H320c4.2 0 8.3-1.7 11.3-4.7zM352 192l-32 32H192l-32-32H16 0v16 64 16H16 32V496v16H48 464h16V496 288h16 16V272 208 192H496 352zm112 96V496H48V288H464zM160 448h-8v16h8H352h8V448h-8H160zM112 320v32h32V320H112zm64 64H144v32h32V384zm32-64H176v32h32V320zm32 64H208v32h32V384zm0-64v32h32V320H240zm64 64H272v32h32V384zm32-64H304v32h32V320zm32 96V384H336v32h32zm0-96v32h32V320H368z"/></svg>Typography</a></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M496 304V256C496 123.5 388.5 16 256 16S16 123.5 16 256c0 130.4 103.9 236.4 233.5 239.9L297.4 448l-.8-.8c-15.7-15.7-24.6-37.1-24.6-59.3c0-46.3 37.6-83.9 83.9-83.9H496zM308.7 436.7L320 448l-11.3 11.3L256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v48 16H496 355.9c-37.5 0-67.9 30.4-67.9 67.9c0 18 7.2 35.3 19.9 48l.8 .8zM104 320a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0-64a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm56-88a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm-64 0a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zm168-40a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0-64a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM416 168a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm-64 0a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"/></svg><a href="colors.html">Colors</a></li>
+                        <li><a href="components.html"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--><path d="M290.7 6.5l-2.7-1-2.7 1L149.3 55 144 56.9v5.6V218.5L5.4 265.2 0 267v5.7V434.9v5.2l4.7 2.1 136 61.2 3 1.3 3.1-1.1L288 451.4l141.2 52.2 3.1 1.1 3-1.3 136-61.2 4.7-2.1v-5.2V272.8 267l-5.4-1.8L432 218.5V62.6 56.9L426.7 55 290.7 6.5zM280 437.3L152 484.6v-143l128-49.8V437.3zM136 483.8l-120-54v-145l120 56.5V483.8zm15.7-251l114.1 47.4L144.3 327.4 30.2 273.7l121.5-40.9zm144.3 59l128 49.8v143L296 437.3V291.8zm-16-23L160 218.9V70.8l120 46v152zm16 0v-152l120-46V218.9L296 268.8zM396.4 61.2L288 102.7 179.6 61.2 288 22.5 396.4 61.2zm-86.1 219l114.1-47.4 121.9 41.1L431.7 327.4 310.2 280.2zM560 429.7l-120 54V341.2L560 285V429.7z"/></svg>Components</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="style-guide">
+        <div id="hero"></div>
+        <div class="container">
+            <section id="section1">
+                <h2 class="sg">Headings</h2>
+                <div id="headings" class="container-fluid">
+                    <div id="h1" class="font">
+                        <h1>h1. Heading 1</h1>
+
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+
+                    </div>
+                    <div id="h2" class="font">
+                        <h2>h2. Heading 2</h2>
+
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+                    </div>
+                    <div id="h3" class="font">
+                        <h3>h3. Heading 3</h3>
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+                    </div>
+                    <div id="h4" class="font">
+                        <h4>h4. Heading 4</h4>
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+                    </div>
+                    <div id="h5" class="font">
+                        <h5>h5. Heading 5</h5>
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+                    </div>
+                    <div id="h6" class="font">
+                        <h6>h6. Heading 6</h6>
+                        <ul class="specs">
+                            <li class="family">Family</li>
+                            <li class="size">Size</li>
+                            <li class="weight">Weight</li>
+                        </ul>
+                    </div>
+                </div>
+<div id="display-headings" class="container-fluid">
+    <h3 class="sg">Display Headings</h3>
+
+    <div id="display-1" class="font">
+        <h1 class="display-1">Display 1</h1>
+        <ul class="specs">
+            <li class="family">Family</li>
+            <li class="size">Size</li>
+            <li class="weight">Weight</li>
+        </ul>
+    </div>
+    <div id="display-2" class="font">
+        <h2 class="display-2">Display 2</h2>
+        <ul class="specs">
+            <li class="family">Family</li>
+            <li class="size">Size</li>
+            <li class="weight">Weight</li>
+        </ul>
+    </div>
+    <div id="display-3" class="font">
+        <h3 class="display-3">Display 3</h3>
+        <ul class="specs">
+            <li class="family">Family</li>
+            <li class="size">Size</li>
+            <li class="weight">Weight</li>
+        </ul>
+    </div>
+    <div id="display-4" class="font">
+        <h4 class="display-4">Display 4</h4>
+        <ul class="specs">
+            <li class="family">Family</li>
+            <li class="size">Size</li>
+            <li class="weight">Weight</li>
+        </ul>
+    </div></div>
+                <h3 class="sg">Headings w/ secondary text</h3>
+                <h1>Heading 1
+                    <small class="text-muted">With faded secondary text</small>
+                    <h2>Heading 2
+                        <small class="text-muted">With faded secondary text</small>
+                        <h3>Heading 3
+                            <small class="text-muted">With faded secondary text</small>
+                            <h4>Heading 4
+                                <small class="text-muted">With faded secondary text</small>
+
+
+            </section>
+            <section id="section2">
+                <hgroup>
+                    <h2 class="sg">Body</h2>
+                </hgroup>
+                <p class="accent">Accent text for emphasis.</p>
+
+                <p class="caption">Caption text for images & figures.</p>
+                <p class="lead">
+                    This is a lead paragraph. It stands out from regular paragraphs.
+                </p>
+
+
+                <p class="body1">Body 1 &mdash;
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p class="body2">Body 2 &mdash;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+            <aside id="banner">
+                <h2>List Items</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                </ul>
+                <ul>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                </ul>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">A list item</li>
+                    <li class="list-group-item">A list item</li>
+                    <li class="list-group-item">A list item</li>
+                </ol>
+                <div class="row">
+                    <ul class="list-group" id="list-tab" role="tablist">
+                        <li> <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+                        </li>
+                        <li> <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab"
+                                aria-controls="list-profile">Profile</a></li>
+                        <li> <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab"
+                                aria-controls="list-messages">Messages</a></li>
+                        <li><a class="list-group-item list-group-item-action" id="list-settings-list"
+                                data-bs-toggle="list" href="#list-settings" role="tab"
+                                aria-controls="list-settings">Settings</a></li>
+
+                    </ul>
+
+                </div>
+            </aside>
+            <section id="section1">
+                <h2>Section 1</h2>
+            </section>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
