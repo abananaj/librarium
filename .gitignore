@@ -1,5 +1,2 @@
-# *.npmrc
 *.ini
-# *.png
-/design-system/exemplum
 *.code-workspace
