@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blend-modes</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bmw4zvq.css">
+    <style>
+        body {
+            font-family: antipol-variable;
+            background-color: blue;
+            color: white;
+        }
+
+        #mbm {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        #mbm div {
+            align-items: center;
+            width: 23vw;
+            flex-flow: column nowrap;
+        }
+
+        #mbm div div {
+            width: 20vw;
+            height: 20vw;
+            background-image: url("https://mundi.s3.us-west-1.amazonaws.com/stock/chicago/10.jpeg");
+            background-size: cover;
+            background-color: red;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="stylesheet" href="blend-modes.css">
+</head>
+
+<body>
+    <h1>BLEND MODES</h1>
+    <div class="container" id="mbm">
+        <div>
+            <h2>normal</h2>
+            <p>This is the default mode which specifies no blending. The blending formula simply selects the source
+                color.
+            </p>
+            <div class="normal"></div>
+            <div class="bg-normal"></div>
+        </div>
+        <div>
+            <h2>multiply</h2>
+            <p>The source color is multiplied by the destination color and replaces the destination. The resultant color
+                is always at least as dark as either the source or destination color. Multiplying any color with black
+                results in black. Multiplying any color with white preserves the original color.
+            </p>
+            <div class="multiply"></div>
+            <div class="bg-multiply"></div>
+        </div>
+        <div>
+            <h2>screen</h2>
+            <p>Multiplies the complements of the backdrop and source color values, then complements the result. The
+                result color is always at least as light as either of the two constituent colors. Screening any color
+                with white produces white; screening with black leaves the original color unchanged. The effect is
+                similar to projecting multiple photographic slides simultaneously onto a single screen.
+            </p>
+            <div class="screen"></div>
+            <div class="bg-screen"></div>
+        </div>
+        <div>
+            <h2>overlay</h2>
+            <p>Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the
+                backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed
+                with the source color to reflect the lightness or darkness of the backdrop.
+            </p>
+            <div class="overlay"></div>
+            <div class="bg-overlay"></div>
+        </div>
+        <div>
+            <h2>darken</h2>
+            <p>Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the
+                source is darker; otherwise, it is left unchanged.
+            </p>
+            <div class="darken"></div>
+            <div class="bg-darken"></div>
+        </div>
+        <div>
+            <h2>lighten</h2>
+            <p>Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the
+                source is lighter; otherwise, it is left unchanged.
+            </p>
+            <div class="lighten"></div>
+            <div class="bg-lighten"></div>
+        </div>
+        <div>
+            <h2>color-dodge</h2>
+            <p>Brightens the backdrop color to reflect the source color. Painting with black produces no changes.</p>
+            <div class="color-dodge"></div>
+            <div class="bg-color-dodge"></div>
+        </div>
+        <div>
+            <h2>color-burn</h2>
+            <p>Darkens the backdrop color to reflect the source color. Painting with white produces no change.
+            </p>
+            <div class="color-burn"></div>
+            <div class="bg-color-burn"></div>
+        </div>
+        <div>
+            <h2>hard-light</h2>
+            <p>Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a
+                harsh spotlight on the backdrop.
+            </p>
+            <div class="hard-light"></div>
+            <div class="bg-hard-light"></div>
+        </div>
+        <div>
+            <h2>soft-light</h2>
+            <p>Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a
+                diffused spotlight on the backdrop.
+            </p>
+            <div class="soft-light"></div>
+            <div class="bg-soft-light"></div>
+        </div>
+        <div>
+            <h2>difference</h2>
+            <p>Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts
+                the backdrop color; painting with black produces no change.
+            </p>
+            <div class="difference"></div>
+            <div class="bg-difference"></div>
+        </div>
+        <div>
+            <h2>exclusion</h2>
+            <p>Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white
+                inverts the backdrop color; painting with black produces no change.
+            </p>
+            <div class="exclusion"></div>
+            <div class="bg-exclusion"></div>
+        </div>
+        <div>
+            <h2>hue</h2>
+            <p>Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color.
+            </p>
+            <div class="hue"></div>
+            <div class="bg-hue"></div>
+        </div>
+        <div>
+            <h2>saturation</h2>
+            <p>Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color.
+                Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no
+                change.
+            </p>
+            <div class="saturation"></div>
+            <div class="bg-saturation"></div>
+        </div>
+        <div>
+            <h2>color</h2>
+            <p>Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color.
+                This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting
+                color images.
+            </p>
+            <div class="color"></div>
+            <div class="bg-color"></div>
+        </div>
+        <div>
+            <h2>luminosity</h2>
+            <p>Creates a color with the luminosity of the source color and the hue and saturation of the backdrop color.
+                This produces an inverse effect to that of the Color mode. This mode is the one you can use to create
+                monchrome "tinted" image effects like the ones you can see in different website headers.
+            </p>
+            <div class="luminosity"></div>
+            <div class="bg-luminosity"></div>
+        </div>
+        <div>
+            <h2>plus-darker</h2>
+            <p>description</p>
+            <div class="plus-darker"></div>
+            <div class="bg-plus-darker"></div>
+        </div>
+        <div>
+            <h2>plus-lighter</h2>
+            <p>description</p>
+            <div class="plus-lighter"></div>
+            <div class="bg-plus-lighter"></div>
+        </div>
+
+    </div>
+    <footer>
+        <a href="https://www.sarasoueidan.com/blog/compositing-and-blending-in-css/">source</a>
+    </footer>
+</body>
+
+</html>
