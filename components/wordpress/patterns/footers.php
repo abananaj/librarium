@@ -11,12 +11,8 @@
     <title>Footers</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
-
-
-
-
-
-    <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/styles/css/color-mode-toggle.css">
 
     <style>
         .bd-placeholder-img {
@@ -374,7 +370,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

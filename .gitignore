@@ -4,3 +4,4 @@
 *.min.css
 *.min.css.map
 _*/
+templates/_*
