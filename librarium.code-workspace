@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        },
+        {
+            "path": "_webpack"
+        },
+        {
+            "path": "_webpack-babel"
+        },
+        {
+            "path": "_webpack-typescript"
+        }
+    ]
+}
