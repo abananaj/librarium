@@ -1,3 +1,21 @@
 [submodule "templates/_webpack"]
 	path = templates/_webpack
 	url = https://github.com/abananaj/_webpack.git
+[submodule "templates/_bs-sass-library"]
+	path = templates/_bs-sass-library
+	url = https://github.com/abananaj/_bs-sass-library
+[submodule "templates/_firebase"]
+	path = templates/_firebase
+	url = https://github.com/abananaj/_firebase
+[submodule "templates/_color-modes"]
+	path = templates/_color-modes
+	url = https://github.com/abananaj/_color-modes
+[submodule "templates/_ui-library"]
+	path = templates/_ui-library
+	url = https://github.com/abananaj/_ui-library
+[submodule "templates/_style-guide"]
+	path = templates/_style-guide
+	url = https://github.com/abananaj/_style-guide
+[submodule "templates/fundamentum"]
+	path = templates/fundamentum
+	url = https://github.com/abananaj/fundamentum
