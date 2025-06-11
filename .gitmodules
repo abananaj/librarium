@@ -34,3 +34,9 @@
 [submodule "templates/_react"]
 	path = templates/_react
 	url = https://github.com/iamshaunjp/Complete-React-Tutorial
+[submodule "media/_devicon"]
+	path = media/_devicon
+	url = https://github.com/devicons/devicon.git
+[submodule "media/devicons"]
+	path = media/devicons
+	url = https://github.com/devicons/devicon.git
