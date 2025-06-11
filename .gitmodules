@@ -19,3 +19,18 @@
 [submodule "templates/fundamentum"]
 	path = templates/fundamentum
 	url = https://github.com/abananaj/fundamentum
+[submodule "templates/_typescript"]
+	path = templates/_typescript
+	url = https://github.com/iamshaunjp/typescript-tutorial
+[submodule "templates/_sass"]
+	path = templates/_sass
+	url = https://github.com/iamshaunjp/complete-sass-tutorial.git
+[submodule "templates/_gulp"]
+	path = templates/_gulp
+	url = https://github.com/abananaj/_gulp.git
+[submodule "_react"]
+	path = _react
+	url = https://github.com/iamshaunjp/Complete-React-Tutorial
+[submodule "templates/_react"]
+	path = templates/_react
+	url = https://github.com/iamshaunjp/Complete-React-Tutorial
