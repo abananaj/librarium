@@ -1,9 +1,6 @@
 [submodule "templates/_webpack"]
 	path = templates/_webpack
 	url = https://github.com/abananaj/_webpack.git
-[submodule "templates/_bs-sass-library"]
-	path = templates/_bs-sass-library
-	url = https://github.com/abananaj/_bs-sass-library
 [submodule "templates/_firebase"]
 	path = templates/_firebase
 	url = https://github.com/abananaj/_firebase
@@ -16,9 +13,6 @@
 [submodule "templates/_style-guide"]
 	path = templates/_style-guide
 	url = https://github.com/abananaj/_style-guide
-[submodule "templates/fundamentum"]
-	path = templates/fundamentum
-	url = https://github.com/abananaj/fundamentum
 [submodule "templates/_typescript"]
 	path = templates/_typescript
 	url = https://github.com/iamshaunjp/typescript-tutorial
@@ -28,15 +22,3 @@
 [submodule "templates/_gulp"]
 	path = templates/_gulp
 	url = https://github.com/abananaj/_gulp.git
-[submodule "_react"]
-	path = _react
-	url = https://github.com/iamshaunjp/Complete-React-Tutorial
-[submodule "templates/_react"]
-	path = templates/_react
-	url = https://github.com/iamshaunjp/Complete-React-Tutorial
-[submodule "media/_devicon"]
-	path = media/_devicon
-	url = https://github.com/devicons/devicon.git
-[submodule "media/devicons"]
-	path = media/devicons
-	url = https://github.com/devicons/devicon.git
