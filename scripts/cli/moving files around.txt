@@ -1,0 +1,7 @@
+xcopy c:\Users\annaj\Desktop\4_ARCHIVES e:\Users\annaj\Desktop\4_ARCHIVES /s /e /c /h /i
+xcopy c:\Users\annaj\Desktop\2_AREAS e:\Users\annaj\Desktop\2_AREAS /s /e /c /h /i
+xcopy c:\Users\annaj\Desktop\1_PROJECTS e:\Users\annaj\Desktop\1_PROJECTS /s /e /c /h /i
+xcopy c:\Users\annaj\Desktop\3_RESOURCES e:\Users\annaj\Desktop\3_RESOURCES /s /e /c /h /i
+
+
+xcopy c: e: /s /e /c /h /i
