@@ -22,3 +22,6 @@
 [submodule "templates/_gulp"]
 	path = templates/_gulp
 	url = https://github.com/abananaj/_gulp.git
+[submodule "templates/_react"]
+	path = templates/_react
+	url = https://github.com/iamshaunjp/Complete-React-Tutorial
